@@ -1,0 +1,40 @@
+{
+  "name": "cypressbdd",
+  "version": "2.0.0",
+  "description": "Cucumber Frawork",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "smoketest": "npx cypress run -e \"TAGS= @Sanity \" --browser chrome --headed",
+    "smoketest:allure": "npx cypress run -e \"TAGS= @Sanity \" --browser chrome --headed --env allure=true",
+    "cy:run": "npx cypress run --config video=true --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:history": "mv -f allure-report/history allure-results/history",
+    "allure:open": "allure open allure-report",
+    "make:everything": "npm run cy:run && npm run allure:report && npm run allure:history && npm run allure:report && npm run allure:open"       
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Pedro Thome",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress-audit/lighthouse": "^1.4.2",
+    "@shelex/cypress-allure-plugin": "^2.38.4",
+    "cucumber-html-reporter": "^6.0.0",
+    "cypress": "^12.10.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.3.0",
+    "ajv": "^8.16.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/newtours",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

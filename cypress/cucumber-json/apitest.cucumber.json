@@ -1,0 +1,58 @@
+[
+  {
+    "description": "As a valid user, get all users",
+    "keyword": "Feature",
+    "name": "APITest",
+    "line": 1,
+    "id": "apitest",
+    "tags": [],
+    "uri": "apitest.feature",
+    "elements": [
+      {
+        "id": "apitest;get-all-users",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Get all users",
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I get all users",
+            "result": {
+              "status": "passed",
+              "duration": 1564000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "validate status code 200",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "validate the contract schema to get all users",
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
