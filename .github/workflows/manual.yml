@@ -25,7 +25,7 @@ jobs:
 
       - name: Run Cypress Tests
         run: |
-          npx cypress run --record --key ${{ secrets.CYPRESS_API_KEY }} --config video=true --env allure=true
+          npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --config video=true --env allure=true
 
       - name: Generate Allure Report
         run: |
