@@ -3,15 +3,19 @@ const { defineConfig } = require("cypress");
 const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 module.exports = defineConfig({  
+  env: {
+    CYPRESS_API_KEY: '${CYPRESS_API_KEY}'
+  },
+  projectId: "pfj796", 
   e2e: {
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber())
-      // on("before:browser:launch", (browser = {}, launchOptions) => {
-      //   prepareAudit(launchOptions);
-      // });     
-      // on("task", {
-      //   lighthouse: lighthouse(),        
-      // });   
+      on("before:browser:launch", (browser = {}, launchOptions) => {
+        prepareAudit(launchOptions);
+      });     
+      on("task", {
+        lighthouse: lighthouse(),        
+      });   
       allureWriter(on, config); 
       return config; 
     },

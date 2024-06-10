@@ -39,11 +39,11 @@ When('Verify the title', () => {
     cy.title().should('eq', 'Welcome: Mercury Tours')
 })
 
-// Then('I should see web audit results', () => {
-//     //   cy.lighthouse(lighthousemetrics, opts);
-//       cy.wait(2000)
-//       cy.screenshot();
-//     })
+Then('I should see web audit results', () => {
+      cy.lighthouse(lighthousemetrics, opts);
+      cy.wait(2000)
+      cy.screenshot();
+    })
 
 When('Enter user name {string}', (username) => {
     login.typeUserName(username)
