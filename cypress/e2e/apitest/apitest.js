@@ -12,16 +12,35 @@ Given('I get all users', () => {
     cy.request({
         method: "GET",
         url: "https://gorest.co.in/public/v2/users"
-    }).as('getgorest');   
+    }).as('getAllUsers');   
 });
 
 Then('validate status code {int}', (statuscode) => {   
-    cy.get('@getgorest').then(response =>{expect(response.status).to.eq(statuscode);})
+    cy.get('@getAllUsers').then(response =>{expect(response.status).to.eq(statuscode);})
     });
 
 And('validate the contract schema to get all users', () => { 
-    cy.get('@getgorest').then(response =>{
+    cy.get('@getAllUsers').then(response =>{
         cy.fixture("getAllUsersContractSchema").then((contrato) => {
+            const validate = ajv.compile(contrato)
+            const responseApi = validate(response.body)
+            if (!responseApi) cy.log(validate.errors).then(()=>{
+              throw new Error('Contract Schema Fail')
+            });
+        });
+    })
+});
+
+Given('I get specific user {string}', (userId) => {
+    cy.request({
+        method: "GET",
+        url: `https://gorest.co.in/public/v2/users/${userId}`
+    }).as('getSpecificUser');   
+});
+
+And('validate the contract schema to get specific user', () => { 
+    cy.get('@getSpecificUser').then(response =>{
+        cy.fixture("getSpecificUsersContractSchema").then((contrato) => {
             const validate = ajv.compile(contrato)
             const responseApi = validate(response.body)
             if (!responseApi) cy.log(validate.errors).then(()=>{
