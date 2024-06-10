@@ -1,12 +1,12 @@
 {
-  "uid" : "7498e0a902bb7337",
+  "uid" : "b927d5ada1410c3f",
   "name" : "Get specific user",
   "fullName" : "Get specific user",
   "historyId" : "f41e8575b52aef63d4a34f25218307cb",
   "time" : {
-    "start" : 1717985515222,
-    "stop" : 1717985515516,
-    "duration" : 294
+    "start" : 1717985822420,
+    "stop" : 1717985822737,
+    "duration" : 317
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Given I get specific user \"2934743\"",
       "time" : {
-        "start" : 1717985515244,
-        "stop" : 1717985515503,
-        "duration" : 259
+        "start" : 1717985822443,
+        "stop" : 1717985822724,
+        "duration" : 281
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "GET 200 https://gorest.co.in/public/v2/users/2934743",
         "time" : {
-          "start" : 1717985515245,
-          "stop" : 1717985515502,
-          "duration" : 257
+          "start" : 1717985822443,
+          "stop" : 1717985822722,
+          "duration" : 279
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,9 +40,9 @@
       }, {
         "name" : "as (\"getSpecificUser\")",
         "time" : {
-          "start" : 1717985515502,
-          "stop" : 1717985515502,
-          "duration" : 0
+          "start" : 1717985822722,
+          "stop" : 1717985822723,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -62,17 +62,17 @@
     }, {
       "name" : "Then validate status code 200 to get specific user",
       "time" : {
-        "start" : 1717985515503,
-        "stop" : 1717985515509,
+        "start" : 1717985822724,
+        "stop" : 1717985822730,
         "duration" : 6
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get @getSpecificUser",
         "time" : {
-          "start" : 1717985515504,
-          "stop" : 1717985515505,
-          "duration" : 1
+          "start" : 1717985822724,
+          "stop" : 1717985822726,
+          "duration" : 2
         },
         "status" : "passed",
         "steps" : [ ],
@@ -85,8 +85,8 @@
       }, {
         "name" : "assert expected **200** to equal **200**",
         "time" : {
-          "start" : 1717985515507,
-          "stop" : 1717985515507,
+          "start" : 1717985822728,
+          "stop" : 1717985822728,
           "duration" : 0
         },
         "status" : "passed",
@@ -113,16 +113,16 @@
     }, {
       "name" : "And validate the contract schema to get specific user",
       "time" : {
-        "start" : 1717985515509,
-        "stop" : 1717985515516,
-        "duration" : 7
+        "start" : 1717985822729,
+        "stop" : 1717985822737,
+        "duration" : 8
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get @getSpecificUser",
         "time" : {
-          "start" : 1717985515509,
-          "stop" : 1717985515510,
+          "start" : 1717985822730,
+          "stop" : 1717985822731,
           "duration" : 1
         },
         "status" : "passed",
@@ -136,8 +136,8 @@
       }, {
         "name" : "fixture (\"getSpecificUsersContractSchema\")",
         "time" : {
-          "start" : 1717985515510,
-          "stop" : 1717985515514,
+          "start" : 1717985822731,
+          "stop" : 1717985822735,
           "duration" : 4
         },
         "status" : "passed",
@@ -174,6 +174,9 @@
     "name" : "feature",
     "value" : "APITest"
   }, {
+    "name" : "tag",
+    "value" : "Positive"
+  }, {
     "name" : "resultFormat",
     "value" : "allure2"
   } ],
@@ -199,17 +202,17 @@
         "total" : 2
       },
       "items" : [ {
-        "uid" : "9a5086c5bedc061d",
+        "uid" : "c4a6983d5964f7e7",
         "status" : "passed",
         "time" : {
-          "start" : 1717985515222,
-          "stop" : 1717985515516,
-          "duration" : 294
+          "start" : 1717985822420,
+          "stop" : 1717985822737,
+          "duration" : 317
         }
       } ]
     },
-    "tags" : [ ]
+    "tags" : [ "Positive" ]
   },
-  "source" : "7498e0a902bb7337.json",
+  "source" : "b927d5ada1410c3f.json",
   "parameterValues" : [ ]
 }
