@@ -15,7 +15,7 @@ Given('I get all users', () => {
     }).as('getAllUsers');   
 });
 
-Then('validate status code {int}', (statuscode) => {   
+Then('validate status code {int} to get all users', (statuscode) => {   
     cy.get('@getAllUsers').then(response =>{expect(response.status).to.eq(statuscode);})
     });
 
@@ -37,6 +37,10 @@ Given('I get specific user {string}', (userId) => {
         url: `https://gorest.co.in/public/v2/users/${userId}`
     }).as('getSpecificUser');   
 });
+
+Then('validate status code {int} to get specific users', (statuscode) => {   
+    cy.get('@getSpecificUser').then(response =>{expect(response.status).to.eq(statuscode);})
+    });
 
 And('validate the contract schema to get specific user', () => { 
     cy.get('@getSpecificUser').then(response =>{
