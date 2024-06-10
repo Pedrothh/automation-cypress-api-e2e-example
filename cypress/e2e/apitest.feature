@@ -7,6 +7,7 @@ As a valid user, get all users
         Then validate status code 200 to get all users 
         And validate the contract schema to get all users
 
+    @Positive
     Scenario: Get specific user
         Given I get specific user "2934743"
         Then validate status code 200 to get specific user
