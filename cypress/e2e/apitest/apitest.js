@@ -38,7 +38,7 @@ Given('I get specific user {string}', (userId) => {
     }).as('getSpecificUser');   
 });
 
-Then('validate status code {int} to get specific users', (statuscode) => {   
+Then('validate status code {int} to get specific user', (statuscode) => {   
     cy.get('@getSpecificUser').then(response =>{expect(response.status).to.eq(statuscode);})
     });
 
