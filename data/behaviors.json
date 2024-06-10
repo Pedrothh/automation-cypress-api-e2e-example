@@ -1,52 +1,65 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
-    "name" : "APITest",
-    "children" : [ {
-      "name" : "Get all users",
-      "uid" : "b817c2d128222d79",
-      "parentUid" : "e84088c3e8baccc6f5328e14559d6a2d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1717983856798,
-        "stop" : 1717983857255,
-        "duration" : 457
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    } ],
-    "uid" : "e84088c3e8baccc6f5328e14559d6a2d"
-  }, {
     "name" : "NewTour Verification",
     "children" : [ {
       "name" : "NewTour Start application",
-      "uid" : "e2395892277c940",
+      "uid" : "dc5d58386d798dc4",
       "parentUid" : "4db8aa07759316f5504a7729214b0f08",
       "status" : "passed",
       "time" : {
-        "start" : 1717983864240,
-        "stop" : 1717983872330,
-        "duration" : 8090
+        "start" : 1717985496875,
+        "stop" : 1717985503282,
+        "duration" : 6407
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "NewTour Login",
-      "uid" : "7f58adca152c94af",
+      "uid" : "6bb887af28677a7b",
       "parentUid" : "4db8aa07759316f5504a7729214b0f08",
       "status" : "passed",
       "time" : {
-        "start" : 1717983872402,
-        "stop" : 1717983877288,
-        "duration" : 4886
+        "start" : 1717985503311,
+        "stop" : 1717985506734,
+        "duration" : 3423
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "4db8aa07759316f5504a7729214b0f08"
+  }, {
+    "name" : "APITest",
+    "children" : [ {
+      "name" : "Get all users",
+      "uid" : "39b9cf120cfde179",
+      "parentUid" : "e84088c3e8baccc6f5328e14559d6a2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717985514829,
+        "stop" : 1717985515215,
+        "duration" : 386
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Get specific user",
+      "uid" : "7498e0a902bb7337",
+      "parentUid" : "e84088c3e8baccc6f5328e14559d6a2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717985515222,
+        "stop" : 1717985515516,
+        "duration" : 294
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e84088c3e8baccc6f5328e14559d6a2d"
   } ],
   "name" : "behaviors"
 }
