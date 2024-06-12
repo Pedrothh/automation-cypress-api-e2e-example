@@ -12,6 +12,7 @@ on:
         description: 'Generate Allure Report?'
         required: true
         default: 'true'
+        type: choice
         options:
           - true
           - false
@@ -19,12 +20,14 @@ on:
         description: 'Generate Video Report?'
         required: true
         default: 'true'
+        type: choice
         options:
           - true
           - false
       cypresscloud:
         description: 'Report to Cypress Cloud?'
         required: true
+        type: choice
         default: 'true'
         options:
           - true
