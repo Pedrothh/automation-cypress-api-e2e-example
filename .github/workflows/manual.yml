@@ -8,9 +8,7 @@ on:
       - main
   workflow_dispatch:
     inputs:
-      branch:
-        description: 'Branch to run the workflow'
-        required: true
+      - branch
 
 permissions:
   contents: read
