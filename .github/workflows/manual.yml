@@ -12,17 +12,10 @@ on:
         description: 'Branch to run the workflow'
         required: true
         default: 'main'
-        options:
-          - main
-          - develop
       environment:
         description: 'Environment to deploy'
         required: true
         default: 'prd'
-        options:
-          - tst
-          - hlg
-          - prd
 
 permissions:
   contents: read
