@@ -6,6 +6,23 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to run the workflow'
+        required: true
+        default: 'main'
+        options:
+          - main
+          - develop
+      environment:
+        description: 'Environment to deploy'
+        required: true
+        default: 'prd'
+        options:
+          - tst
+          - hlg
+          - prd
 
 permissions:
   contents: read
@@ -19,6 +36,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.branch }}
 
       - name: Install Dependencies
         run: npm install
@@ -35,12 +54,9 @@ jobs:
           allure generate allure-results --clean -o allure-report
           mv -f allure-report/history allure-results/history
           allure generate allure-results --clean -o allure-report
-        if: always()
   
       - name: Deploy Allure Report to GitHub Pages
-        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
           publish_dir: ./allure-report
-          
