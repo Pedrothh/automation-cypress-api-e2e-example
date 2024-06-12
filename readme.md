@@ -23,33 +23,10 @@ Scripts Disponíveis
     allure:open: Abre o relatório Allure gerado.
     make:everything: Executa todos os testes, gera relatórios Allure, move o histórico e abre o relatório Allure.
 
-Como Executar os Testes
-Executar Testes de Sanidade
-
-Para executar os testes de sanidade, use:
-
-```bash
-npm run smoketest
-```
-Executar Testes de Sanidade com Relatórios Allure
-
-Para executar os testes de sanidade com geração de relatórios Allure, use:
-
-```bash
-npm run smoketest:allure
-```
-Executar Todos os Testes
+Executar Todos os Steps
 
 Para executar todos os testes com gravação de vídeo e relatórios Allure, use:
 
-```bash
-npm run cy:run
-```
-
-Gerar e Abrir Relatórios Allure
-
-Para gerar um relatório Allure e abrir o relatório gerado, use:
-
-```bash
+```sh
 npm run make:everything
 ```

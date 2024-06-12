@@ -11,11 +11,7 @@ on:
       branch:
         description: 'Branch to run the workflow'
         required: true
-        default: 'main'
-      environment:
-        description: 'Environment to deploy'
-        required: true
-        default: 'prd'
+        options: main
 
 permissions:
   contents: read
