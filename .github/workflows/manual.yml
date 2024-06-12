@@ -7,6 +7,14 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      allure:
+        description: 'Generate Allure Report'
+        required: true
+        default: 'true'
+        options:
+          - true
+          - false
 
 permissions:
   contents: read
@@ -28,9 +36,10 @@ jobs:
 
       - name: Run Cypress Tests
         run: |
-          npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --config video=true --env allure=true
+          npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --config video=true --env allure=${{ github.event.inputs.allure }}
 
       - name: Generate Allure Report
+        if: ${{ github.event.inputs.allure == 'true' }}
         run: |
           curl -o allure-commandline.zip -L "https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.9/allure-commandline-2.13.9.zip"
           unzip -o allure-commandline.zip -d allure
@@ -40,6 +49,7 @@ jobs:
           allure generate allure-results --clean -o allure-report
   
       - name: Deploy Allure Report to GitHub Pages
+        if: ${{ github.event.inputs.allure == 'true' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
