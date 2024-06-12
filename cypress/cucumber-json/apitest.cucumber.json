@@ -28,17 +28,17 @@
             "name": "I get all users",
             "result": {
               "status": "passed",
-              "duration": 1564000000
+              "duration": 1503000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "validate status code 200",
+            "name": "validate status code 200 to get all users",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 12000000
             }
           },
           {
@@ -48,7 +48,52 @@
             "name": "validate the contract schema to get all users",
             "result": {
               "status": "passed",
-              "duration": 53000000
+              "duration": 54000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "apitest;get-specific-user",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Get specific user",
+        "tags": [
+          {
+            "name": "@Positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I get specific user by userId",
+            "result": {
+              "status": "passed",
+              "duration": 1004000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "validate status code 200 to get specific user",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "validate the contract schema to get specific user",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
             }
           }
         ]

@@ -31,11 +31,20 @@ And('validate the contract schema to get all users', () => {
     })
 });
 
-Given('I get specific user {string}', (userId) => {
+Given('I get specific user by userId', () => {
     cy.request({
         method: "GET",
-        url: `https://gorest.co.in/public/v2/users/${userId}`
-    }).as('getSpecificUser');   
+        url: "https://gorest.co.in/public/v2/users"
+    }).then(response => {
+        cy.request({
+            method: "GET",
+            url: `https://gorest.co.in/public/v2/users/${response.body[0].id}`
+        }).as('getSpecificUser'); 
+    });
+
+    
+    
+      
 });
 
 Then('validate status code {int} to get specific user', (statuscode) => {   
