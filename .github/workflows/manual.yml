@@ -48,10 +48,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Cypress Tests
+      - name: Run Cypress Tests with Cypress Cloud
         if: ${{ github.event.inputs.cypresscloud == 'true' }}
         run: |
           npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --config video=${{ github.event.inputs.video }} --env allure=${{ github.event.inputs.allure }}
+
+      - name: Run Cypress Tests without Cypress Cloud
         if: ${{ github.event.inputs.cypresscloud == 'false' }}
         run: |
           npx cypress run --config video=${{ github.event.inputs.video }} --env allure=${{ github.event.inputs.allure }}
