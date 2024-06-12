@@ -9,7 +9,21 @@ on:
   workflow_dispatch:
     inputs:
       allure:
-        description: 'Generate Allure Report'
+        description: 'Generate Allure Report?'
+        required: true
+        default: 'true'
+        options:
+          - true
+          - false
+      video:
+        description: 'Generate Video Report?'
+        required: true
+        default: 'true'
+        options:
+          - true
+          - false
+      cypresscloud:
+        description: 'Report to Cypress Cloud?'
         required: true
         default: 'true'
         options:
@@ -35,8 +49,12 @@ jobs:
         run: npm install
 
       - name: Run Cypress Tests
+        if: ${{ github.event.inputs.cypresscloud == 'true' }}
         run: |
-          npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --config video=true --env allure=${{ github.event.inputs.allure }}
+          npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --config video=${{ github.event.inputs.video }} --env allure=${{ github.event.inputs.allure }}
+        if: ${{ github.event.inputs.cypresscloud == 'false' }}
+        run: |
+          npx cypress run --config video=${{ github.event.inputs.video }} --env allure=${{ github.event.inputs.allure }}
 
       - name: Generate Allure Report
         if: ${{ github.event.inputs.allure == 'true' }}
