@@ -51,13 +51,13 @@ jobs:
       - name: Validate Inputs
         run: |
           if [[ -z "${{ github.event.inputs.allure }}" ]]; then
-            echo "allure=false" >> $GITHUB_ENV
+            echo "allure=true" >> $GITHUB_ENV
           fi
           if [[ -z "${{ github.event.inputs.video }}" ]]; then
-            echo "video=false" >> $GITHUB_ENV
+            echo "video=true" >> $GITHUB_ENV
           fi
           if [[ -z "${{ github.event.inputs.cypresscloud }}" ]]; then
-            echo "cypresscloud=false" >> $GITHUB_ENV
+            echo "cypresscloud=true" >> $GITHUB_ENV
           fi
 
       - name: Install Dependencies
