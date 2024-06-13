@@ -1,5 +1,65 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "APITest",
+    "children" : [ {
+      "name" : "Get all users",
+      "uid" : "bdf78286e5f13ddd",
+      "parentUid" : "e84088c3e8baccc6f5328e14559d6a2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1718320169905,
+        "stop" : 1718320170306,
+        "duration" : 401
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Get specific user",
+      "uid" : "8f7b068ef74b2c38",
+      "parentUid" : "e84088c3e8baccc6f5328e14559d6a2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1718320170313,
+        "stop" : 1718320170941,
+        "duration" : 628
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e84088c3e8baccc6f5328e14559d6a2d"
+  }, {
+    "name" : "NewTour Verification",
+    "children" : [ {
+      "name" : "NewTour Start application",
+      "uid" : "dc7252c18db1f859",
+      "parentUid" : "4db8aa07759316f5504a7729214b0f08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1718320176134,
+        "stop" : 1718320181450,
+        "duration" : 5316
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "NewTour Login",
+      "uid" : "a561df1fdeedff9a",
+      "parentUid" : "4db8aa07759316f5504a7729214b0f08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1718320181476,
+        "stop" : 1718320184831,
+        "duration" : 3355
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4db8aa07759316f5504a7729214b0f08"
+  } ],
   "name" : "behaviors"
 }

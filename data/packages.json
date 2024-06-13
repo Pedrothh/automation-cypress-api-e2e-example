@@ -1,5 +1,69 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "cypress.e2e",
+    "children" : [ {
+      "name" : "apitest.feature",
+      "children" : [ {
+        "name" : "Get all users",
+        "uid" : "bdf78286e5f13ddd",
+        "parentUid" : "ac3e2650f041decd241200c956971a89",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718320169905,
+          "stop" : 1718320170306,
+          "duration" : 401
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Get specific user",
+        "uid" : "8f7b068ef74b2c38",
+        "parentUid" : "ac3e2650f041decd241200c956971a89",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718320170313,
+          "stop" : 1718320170941,
+          "duration" : 628
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "apitest.feature"
+    }, {
+      "name" : "newtours.feature",
+      "children" : [ {
+        "name" : "NewTour Start application",
+        "uid" : "dc7252c18db1f859",
+        "parentUid" : "01fe081585d99ade983f6b5630d516a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718320176134,
+          "stop" : 1718320181450,
+          "duration" : 5316
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "NewTour Login",
+        "uid" : "a561df1fdeedff9a",
+        "parentUid" : "01fe081585d99ade983f6b5630d516a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718320181476,
+          "stop" : 1718320184831,
+          "duration" : 3355
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "newtours.feature"
+    } ],
+    "uid" : "cypress.e2e"
+  } ],
   "name" : "packages"
 }
