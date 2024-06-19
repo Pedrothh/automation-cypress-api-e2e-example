@@ -39,15 +39,18 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  checkout:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
           ref: ${{ github.event.inputs.branch }}
 
+  validate:
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
       - name: Validate Inputs
         run: |
           if [[ -z "${{ github.event.inputs.allure }}" ]]; then
@@ -60,21 +63,36 @@ jobs:
             echo "cypresscloud=true" >> $GITHUB_ENV
           fi
 
+  install:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
       - name: Install Dependencies
         run: npm install
 
+  run_tests:
+    runs-on: ubuntu-latest
+    needs: install
+    strategy:
+      matrix:
+        cypresscloud: [true, false]
+    steps:
       - name: Run Cypress Tests with Cypress Cloud
-        if: ${{ env.cypresscloud == 'true' }}
+        if: matrix.cypresscloud == 'true'
         run: |
           npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --config video=${{ env.video }} --env allure=${{ env.allure }}
 
       - name: Run Cypress Tests without Cypress Cloud
-        if: ${{ env.cypresscloud == 'false' }}
+        if: matrix.cypresscloud == 'false'
         run: |
           npx cypress run --config video=${{ env.video }} --env allure=${{ env.allure }}
 
+  generate_report:
+    runs-on: ubuntu-latest
+    needs: run_tests
+    if: ${{ env.allure == 'true' }}
+    steps:
       - name: Generate Allure Report
-        if: ${{ env.allure == 'true' }}
         run: |
           curl -o allure-commandline.zip -L "https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.9/allure-commandline-2.13.9.zip"
           unzip -o allure-commandline.zip -d allure
@@ -83,8 +101,12 @@ jobs:
           mv -f allure-report/history allure-results/history
           allure generate allure-results --clean -o allure-report
 
+  deploy:
+    runs-on: ubuntu-latest
+    needs: generate_report
+    if: ${{ env.allure == 'true' }}
+    steps:
       - name: Deploy Allure Report to GitHub Pages
-        if: ${{ env.allure == 'true' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
