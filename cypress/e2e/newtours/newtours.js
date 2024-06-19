@@ -31,7 +31,7 @@ import loginpage from '../pages/LoginPage'
 const login = new loginpage()
 
 
-Given('Start new tour application', () => {
+Given('I visit new tour application', () => {
     cy.visit('/')
 })
 
@@ -43,8 +43,21 @@ Then('I should see web audit results', () => {
       cy.lighthouse(lighthousemetrics, opts);
       cy.wait(2000)
       cy.screenshot();
-    })
+})
 
-When('Enter user name {string}', (username) => {
+And('I enter user name {string}', (username) => {
     login.typeUserName(username)
+}) 
+
+And('I enter password {string}', (password) => {
+    login.typePassword(password)
+}) 
+
+And('I press the submit button', () => {
+    login.pressSubmit()
+}) 
+
+
+And('I should see the message {string}', (loginSuccessfullyMessage) => {
+    login.shouldSeeTheMessageLoginSuccessfully(loginSuccessfullyMessage)
 }) 
