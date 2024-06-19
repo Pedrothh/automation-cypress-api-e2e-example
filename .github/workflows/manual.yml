@@ -41,6 +41,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -60,24 +61,15 @@ jobs:
           fi
         continue-on-error: true
 
-  install-dependencies:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Install Dependencies
         run: npm install
         continue-on-error: true
 
-  run-tests:
-    runs-on: ubuntu-latest
-    needs: install-dependencies
-    steps:
       - name: Run Cypress Tests with Cypress Cloud
         if: ${{ env.cypresscloud == 'true' }}
         run: |
           npx cypress run --record --key ${{ secrets.CYPRESS_RECORD_KEY }} --config video=${{ env.video }} --env allure=${{ env.allure }}
         continue-on-error: true
-
 
       - name: Run Cypress Tests without Cypress Cloud
         if: ${{ env.cypresscloud == 'false' }}
@@ -85,10 +77,6 @@ jobs:
           npx cypress run --config video=${{ env.video }} --env allure=${{ env.allure }}
         continue-on-error: true
 
-  generate-allure-report:
-    runs-on: ubuntu-latest
-    needs: run-tests
-    steps:
       - name: Generate Allure Report
         if: ${{ env.allure == 'true' }}
         run: |
@@ -100,10 +88,6 @@ jobs:
           allure generate allure-results --clean -o allure-report
         continue-on-error: true
 
-  deploy-allure-report:
-    runs-on: ubuntu-latest
-    needs: generate-allure-report
-    steps:
       - name: Deploy Allure Report to GitHub Pages
         if: ${{ env.allure == 'true' }}
         uses: peaceiris/actions-gh-pages@v3
