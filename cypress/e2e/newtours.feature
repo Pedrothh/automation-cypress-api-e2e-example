@@ -16,3 +16,11 @@ As a valid user, check new tour application start
         When I press the submit button 
         Then I should see web audit results
         And I should see the message "Login Successfully"
+    
+    @testFail
+    Scenario: NewTour Login Fail
+        And I enter user name "testepedro"
+        And I enter password "1"
+        When I press the submit button 
+        Then I should see web audit results
+        And I should see the message "Login Successfully"
