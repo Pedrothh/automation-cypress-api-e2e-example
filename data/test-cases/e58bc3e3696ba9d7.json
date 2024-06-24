@@ -1,0 +1,259 @@
+{
+  "uid" : "e58bc3e3696ba9d7",
+  "name" : "NewTour Login",
+  "fullName" : "NewTour Login",
+  "historyId" : "f594dabc0360e44565422352dbe8e07f",
+  "time" : {
+    "start" : 1719238397242,
+    "stop" : 1719238402380,
+    "duration" : 5138
+  },
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input type=\"text\" name=\"userName\" size=\"10\">`\n\nis being covered by another element:\n\n`<div id=\"ccpa-consent-manager-parent\" style=\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+  "statusTrace" : "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input type=\"text\" name=\"userName\" size=\"10\">`\n\nis being covered by another element:\n\n`<div id=\"ccpa-consent-manager-parent\" style=\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142253:76)\n    at ensureDescendents (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142304:5)\n    at ensureDescendentsAndScroll (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142310:14)\n    at ensureElIsNotCovered (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142441:5)\n    at runAllChecks (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142621:52)\n    at retryActionability (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142658:16)\n    at tryCatcher (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20941:23)\n    at Promise.attempt.Promise.try (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18215:29)\n    at whenStable (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158771:65)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158212:14)\n    at tryCatcher (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20941:23)\n    at Promise._settlePromiseFromHandler (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18876:31)\n    at Promise._settlePromise (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18933:18)\n    at Promise._settlePromise0 (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18978:10)\n    at Promise._settlePromises (https://demo.guru99.com/__cypress/runner/cypress_runner.js:19058:18)\n    at Promise._fulfill (https://demo.guru99.com/__cypress/runner/cypress_runner.js:19002:18)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20616:46)\nFrom Your Spec Code:\n    at LoginPage.limparEPreencherCampo (cypress/e2e/pages/BasePage.js:22:22)\n    at LoginPage.typeUserName (cypress/e2e/pages/LoginPage.js:13:9)\n    at Context.eval (cypress/e2e/newtours/newtours.js:49:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input type=\"text\" name=\"userName\" size=\"10\">`\n\nis being covered by another element:\n\n`<div id=\"ccpa-consent-manager-parent\" style=\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+    "statusTrace" : "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input type=\"text\" name=\"userName\" size=\"10\">`\n\nis being covered by another element:\n\n`<div id=\"ccpa-consent-manager-parent\" style=\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142253:76)\n    at ensureDescendents (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142304:5)\n    at ensureDescendentsAndScroll (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142310:14)\n    at ensureElIsNotCovered (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142441:5)\n    at runAllChecks (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142621:52)\n    at retryActionability (https://demo.guru99.com/__cypress/runner/cypress_runner.js:142658:16)\n    at tryCatcher (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20941:23)\n    at Promise.attempt.Promise.try (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18215:29)\n    at whenStable (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158771:65)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158212:14)\n    at tryCatcher (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20941:23)\n    at Promise._settlePromiseFromHandler (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18876:31)\n    at Promise._settlePromise (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18933:18)\n    at Promise._settlePromise0 (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18978:10)\n    at Promise._settlePromises (https://demo.guru99.com/__cypress/runner/cypress_runner.js:19058:18)\n    at Promise._fulfill (https://demo.guru99.com/__cypress/runner/cypress_runner.js:19002:18)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20616:46)\nFrom Your Spec Code:\n    at LoginPage.limparEPreencherCampo (cypress/e2e/pages/BasePage.js:22:22)\n    at LoginPage.typeUserName (cypress/e2e/pages/LoginPage.js:13:9)\n    at Context.eval (cypress/e2e/newtours/newtours.js:49:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+    "steps" : [ {
+      "name" : "Given I visit new tour application",
+      "time" : {
+        "start" : 1719238397492,
+        "stop" : 1719238398174,
+        "duration" : 682
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit /",
+        "time" : {
+          "start" : 1719238397492,
+          "stop" : 1719238398172,
+          "duration" : 680
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "/ request",
+        "time" : {
+          "start" : 1719238398171,
+          "stop" : 1719238398171,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "/ request",
+        "time" : {
+          "start" : 1719238398172,
+          "stop" : 1719238398172,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "/ request",
+        "time" : {
+          "start" : 1719238398172,
+          "stop" : 1719238398172,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "/ request",
+        "time" : {
+          "start" : 1719238398172,
+          "stop" : 1719238398172,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "/ request",
+        "time" : {
+          "start" : 1719238398172,
+          "stop" : 1719238398172,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And I enter user name \"testepedro\"",
+      "time" : {
+        "start" : 1719238398174,
+        "stop" : 1719238402379,
+        "duration" : 4205
+      },
+      "status" : "failed",
+      "steps" : [ {
+        "name" : "get input[name=\"userName\"]",
+        "time" : {
+          "start" : 1719238398175,
+          "stop" : 1719238398187,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1719238398187,
+          "stop" : 1719238402379,
+          "duration" : 4192
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "request",
+        "time" : {
+          "start" : 1719238402379,
+          "stop" : 1719238402379,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d9647f1a977cfe7e",
+      "name" : "cypress/e2e/newtours.feature:2024-06-24T14:13:22.268Z",
+      "source" : "d9647f1a977cfe7e.png",
+      "type" : "image/png",
+      "size" : 228433
+    }, {
+      "uid" : "f7d43d8c745f8f01",
+      "name" : "video recording",
+      "source" : "f7d43d8c745f8f01.mp4",
+      "type" : "video/mp4",
+      "size" : 2246262
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress.e2e.newtours.feature"
+  }, {
+    "name" : "suite",
+    "value" : "NewTour Verification"
+  }, {
+    "name" : "feature",
+    "value" : "NewTour Verification"
+  }, {
+    "name" : "tag",
+    "value" : "smoke1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test failed",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6e2109485a00067b",
+        "status" : "failed",
+        "statusDetails" : "Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input type=\"text\" name=\"userName\" size=\"10\">`\n\nis being covered by another element:\n\n`<div id=\"ccpa-consent-manager-parent\" style=\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+        "time" : {
+          "start" : 1719238397242,
+          "stop" : 1719238402380,
+          "duration" : 5138
+        }
+      } ]
+    },
+    "tags" : [ "smoke1" ]
+  },
+  "source" : "e58bc3e3696ba9d7.json",
+  "parameterValues" : [ ]
+}
