@@ -5,39 +5,52 @@
     "children" : [ {
       "children" : [ {
         "name" : "Get all users",
-        "uid" : "7ef11d16b3d0841b",
+        "uid" : "2e5dcc1ea44e8d1a",
         "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
         "status" : "passed",
         "time" : {
-          "start" : 1719238383133,
-          "stop" : 1719238383615,
-          "duration" : 482
+          "start" : 1719324848108,
+          "stop" : 1719324848545,
+          "duration" : 437
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Get specific user",
-        "uid" : "3aabac90438185f0",
+        "uid" : "63775d55e7438737",
         "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
         "status" : "passed",
         "time" : {
-          "start" : 1719238383622,
-          "stop" : 1719238384419,
-          "duration" : 797
+          "start" : 1719324848551,
+          "stop" : 1719324849198,
+          "duration" : 647
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "NewTour Start application",
-        "uid" : "89130a7677490d66",
+        "uid" : "f0610e9c8c365f4a",
         "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
         "status" : "passed",
         "time" : {
-          "start" : 1719238390229,
-          "stop" : 1719238397212,
-          "duration" : 6983
+          "start" : 1719324854999,
+          "stop" : 1719324860896,
+          "duration" : 5897
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "NewTour Login",
+        "uid" : "d58cd33d8e1de930",
+        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719324860932,
+          "stop" : 1719324865586,
+          "duration" : 4654
         },
         "flaky" : false,
         "newFailed" : false,
@@ -49,39 +62,22 @@
   }, {
     "name" : "Test failed",
     "children" : [ {
-      "name" : "Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input type=\"text\" name=\"userName\" size=\"10\">`\n\nis being covered by another element:\n\n`<div id=\"ccpa-consent-manager-parent\" style=\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
-      "children" : [ {
-        "name" : "NewTour Login",
-        "uid" : "e58bc3e3696ba9d7",
-        "parentUid" : "7d1b697e24ee20755dd0b12927a37826",
-        "status" : "failed",
-        "time" : {
-          "start" : 1719238397242,
-          "stop" : 1719238402380,
-          "duration" : 5138
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "7d1b697e24ee20755dd0b12927a37826"
-    }, {
-      "name" : "Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input type=\"password\" name=\"password\" size=\"10\">`\n\nis being covered by another element:\n\n`<div id=\"ccpa-consent-manager-parent\" style=\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+      "name" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
       "children" : [ {
         "name" : "NewTour Login Fail",
-        "uid" : "e621cdbe1ffe587c",
-        "parentUid" : "0fb24003e647ee7b054f5244db186c58",
+        "uid" : "2e81f322bd8243c0",
+        "parentUid" : "8e5cd47dd6c5766186e450f6e06f2cc3",
         "status" : "failed",
         "time" : {
-          "start" : 1719238402430,
-          "stop" : 1719238407956,
-          "duration" : 5526
+          "start" : 1719324865644,
+          "stop" : 1719324874461,
+          "duration" : 8817
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "0fb24003e647ee7b054f5244db186c58"
+      "uid" : "8e5cd47dd6c5766186e450f6e06f2cc3"
     } ],
     "uid" : "6f954d88a7c526d172b7c6798d380845"
   } ],
