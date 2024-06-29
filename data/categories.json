@@ -5,39 +5,52 @@
     "children" : [ {
       "children" : [ {
         "name" : "Get all users",
-        "uid" : "8200de313b9d4a3a",
+        "uid" : "1b0a888a55458ae3",
         "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
         "status" : "passed",
         "time" : {
-          "start" : 1719583994699,
-          "stop" : 1719583995176,
-          "duration" : 477
+          "start" : 1719670380494,
+          "stop" : 1719670380951,
+          "duration" : 457
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Get specific user",
-        "uid" : "c62c4a9569bb291e",
+        "uid" : "40e47491adf6ed35",
         "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
         "status" : "passed",
         "time" : {
-          "start" : 1719583995181,
-          "stop" : 1719583995924,
-          "duration" : 743
+          "start" : 1719670380959,
+          "stop" : 1719670381581,
+          "duration" : 622
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "NewTour Start application",
-        "uid" : "ba0c59768ce44a59",
+        "uid" : "501bd130fcda8279",
         "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
         "status" : "passed",
         "time" : {
-          "start" : 1719584002056,
-          "stop" : 1719584009453,
-          "duration" : 7397
+          "start" : 1719670387080,
+          "stop" : 1719670393622,
+          "duration" : 6542
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "NewTour Login",
+        "uid" : "4b0d48134c995dec",
+        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719670393649,
+          "stop" : 1719670398210,
+          "duration" : 4561
         },
         "flaky" : false,
         "newFailed" : false,
@@ -49,35 +62,22 @@
   }, {
     "name" : "Test failed",
     "children" : [ {
-      "name" : "Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<input type=\"text\" name=\"userName\" size=\"10\">`\n\nis being covered by another element:\n\n`<div id=\"ccpa-consent-manager-parent\" style=\"position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 2147483647; background: rgba(0, 0, 0, 0.5);\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+      "name" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
       "children" : [ {
-        "name" : "NewTour Login",
-        "uid" : "be4b1bb407d00f37",
-        "parentUid" : "7d1b697e24ee20755dd0b12927a37826",
-        "status" : "failed",
-        "time" : {
-          "start" : 1719584009489,
-          "stop" : 1719584014615,
-          "duration" : 5126
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "NewTour Login Fail",
-        "uid" : "11f61d482f9c0c5",
-        "parentUid" : "7d1b697e24ee20755dd0b12927a37826",
+        "uid" : "1911afaa86d4feaf",
+        "parentUid" : "8e5cd47dd6c5766186e450f6e06f2cc3",
         "status" : "failed",
         "time" : {
-          "start" : 1719584014695,
-          "stop" : 1719584019928,
-          "duration" : 5233
+          "start" : 1719670398260,
+          "stop" : 1719670407403,
+          "duration" : 9143
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "7d1b697e24ee20755dd0b12927a37826"
+      "uid" : "8e5cd47dd6c5766186e450f6e06f2cc3"
     } ],
     "uid" : "6f954d88a7c526d172b7c6798d380845"
   } ],
