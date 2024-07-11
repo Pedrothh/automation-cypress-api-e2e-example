@@ -1,12 +1,12 @@
 {
-  "uid" : "479cd5ad0f5172d2",
+  "uid" : "efad46c457dce679",
   "name" : "NewTour Start application",
   "fullName" : "NewTour Start application",
   "historyId" : "35eca6644f9cb0184e2376ef2f23f4c4",
   "time" : {
-    "start" : 1720620801206,
-    "stop" : 1720620807837,
-    "duration" : 6631
+    "start" : 1720707180002,
+    "stop" : 1720707186040,
+    "duration" : 6038
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Given I visit new tour application",
       "time" : {
-        "start" : 1720620801217,
-        "stop" : 1720620805011,
-        "duration" : 3794
+        "start" : 1720707180013,
+        "stop" : 1720707183096,
+        "duration" : 3083
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit /",
         "time" : {
-          "start" : 1720620801218,
-          "stop" : 1720620805008,
-          "duration" : 3790
+          "start" : 1720707180013,
+          "stop" : 1720707183087,
+          "duration" : 3074
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,8 +40,8 @@
       }, {
         "name" : "/ request",
         "time" : {
-          "start" : 1720620805007,
-          "stop" : 1720620805007,
+          "start" : 1720707183087,
+          "stop" : 1720707183087,
           "duration" : 0
         },
         "status" : "passed",
@@ -55,8 +55,8 @@
       }, {
         "name" : "/ request",
         "time" : {
-          "start" : 1720620805007,
-          "stop" : 1720620805007,
+          "start" : 1720707183087,
+          "stop" : 1720707183087,
           "duration" : 0
         },
         "status" : "passed",
@@ -70,8 +70,8 @@
       }, {
         "name" : "/ request",
         "time" : {
-          "start" : 1720620805007,
-          "stop" : 1720620805007,
+          "start" : 1720707183087,
+          "stop" : 1720707183087,
           "duration" : 0
         },
         "status" : "passed",
@@ -85,23 +85,8 @@
       }, {
         "name" : "/ request",
         "time" : {
-          "start" : 1720620805007,
-          "stop" : 1720620805007,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "/ request",
-        "time" : {
-          "start" : 1720620805007,
-          "stop" : 1720620805007,
+          "start" : 1720707183087,
+          "stop" : 1720707183087,
           "duration" : 0
         },
         "status" : "passed",
@@ -115,24 +100,24 @@
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 6,
+      "stepsCount" : 5,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
       "name" : "When Verify the title",
       "time" : {
-        "start" : 1720620805011,
-        "stop" : 1720620805026,
-        "duration" : 15
+        "start" : 1720707183096,
+        "stop" : 1720707183113,
+        "duration" : 17
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "title",
         "time" : {
-          "start" : 1720620805012,
-          "stop" : 1720620805023,
-          "duration" : 11
+          "start" : 1720707183097,
+          "stop" : 1720707183109,
+          "duration" : 12
         },
         "status" : "passed",
         "steps" : [ ],
@@ -145,9 +130,9 @@
       }, {
         "name" : "assert expected **Welcome: Mercury Tours** to equal **Welcome: Mercury Tours**",
         "time" : {
-          "start" : 1720620805022,
-          "stop" : 1720620805023,
-          "duration" : 1
+          "start" : 1720707183109,
+          "stop" : 1720707183109,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -173,25 +158,25 @@
     }, {
       "name" : "Then I should see web audit results",
       "time" : {
-        "start" : 1720620805026,
-        "stop" : 1720620807837,
-        "duration" : 2811
+        "start" : 1720707183113,
+        "stop" : 1720707186039,
+        "duration" : 2926
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "lighthouse (\"{ performance: 95, accessibility: 100, 'best-practices': 95, seo: 85, pwa: 100, 'first-contentful-paint': 10 }\"; \"{ formFactor: 'desktop', screenEmulation: { mobile: false, disable: false, width: 1000, height: 660, deviceScaleRatio: 1 } }\")",
         "time" : {
-          "start" : 1720620805028,
-          "stop" : 1720620805031,
-          "duration" : 3
+          "start" : 1720707183115,
+          "stop" : 1720707183119,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "log cy.lighthouse(), Electron is not supported. Skipping...",
           "time" : {
-            "start" : 1720620805029,
-            "stop" : 1720620805031,
-            "duration" : 2
+            "start" : 1720707183115,
+            "stop" : 1720707183118,
+            "duration" : 3
           },
           "status" : "passed",
           "steps" : [ ],
@@ -211,8 +196,8 @@
       }, {
         "name" : "wait 2000",
         "time" : {
-          "start" : 1720620805031,
-          "stop" : 1720620807035,
+          "start" : 1720707183119,
+          "stop" : 1720707185123,
           "duration" : 2004
         },
         "status" : "passed",
@@ -226,8 +211,8 @@
       }, {
         "name" : "2000 request",
         "time" : {
-          "start" : 1720620807035,
-          "stop" : 1720620807035,
+          "start" : 1720707185122,
+          "stop" : 1720707185122,
           "duration" : 0
         },
         "status" : "passed",
@@ -241,8 +226,8 @@
       }, {
         "name" : "2000 request",
         "time" : {
-          "start" : 1720620807035,
-          "stop" : 1720620807035,
+          "start" : 1720707185122,
+          "stop" : 1720707185122,
           "duration" : 0
         },
         "status" : "passed",
@@ -256,8 +241,8 @@
       }, {
         "name" : "2000 request",
         "time" : {
-          "start" : 1720620807035,
-          "stop" : 1720620807035,
+          "start" : 1720707185122,
+          "stop" : 1720707185122,
           "duration" : 0
         },
         "status" : "passed",
@@ -271,9 +256,9 @@
       }, {
         "name" : "screenshot",
         "time" : {
-          "start" : 1720620807035,
-          "stop" : 1720620807835,
-          "duration" : 800
+          "start" : 1720707185123,
+          "stop" : 1720707186037,
+          "duration" : 914
         },
         "status" : "passed",
         "steps" : [ ],
@@ -292,14 +277,14 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "5f8520c267304dcb",
-      "name" : "cypress/e2e/newtours.feature:2024-07-10T14:13:27.348Z",
-      "source" : "5f8520c267304dcb.png",
+      "uid" : "175890f81ead1574",
+      "name" : "cypress/e2e/newtours.feature:2024-07-11T14:13:05.486Z",
+      "source" : "175890f81ead1574.png",
       "type" : "image/png",
       "size" : 239664
     } ],
     "parameters" : [ ],
-    "stepsCount" : 18,
+    "stepsCount" : 17,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -343,17 +328,17 @@
         "total" : 2
       },
       "items" : [ {
-        "uid" : "9fd955572dc55775",
+        "uid" : "185fd481bc7df12c",
         "status" : "passed",
         "time" : {
-          "start" : 1720620801206,
-          "stop" : 1720620807837,
-          "duration" : 6631
+          "start" : 1720707180002,
+          "stop" : 1720707186040,
+          "duration" : 6038
         }
       } ]
     },
     "tags" : [ "Sanity" ]
   },
-  "source" : "479cd5ad0f5172d2.json",
+  "source" : "efad46c457dce679.json",
   "parameterValues" : [ ]
 }
