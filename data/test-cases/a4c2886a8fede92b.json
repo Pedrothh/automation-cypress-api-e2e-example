@@ -1,12 +1,12 @@
 {
-  "uid" : "7512b209d5a71720",
+  "uid" : "a4c2886a8fede92b",
   "name" : "Get all users",
   "fullName" : "Get all users",
   "historyId" : "fe8c4b2e419b20c745584ac3356ef8e7",
   "time" : {
-    "start" : 1721830440535,
-    "stop" : 1721830441000,
-    "duration" : 465
+    "start" : 1721916764944,
+    "stop" : 1721916765389,
+    "duration" : 445
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Given I get all users",
       "time" : {
-        "start" : 1721830440544,
-        "stop" : 1721830440950,
-        "duration" : 406
+        "start" : 1721916764955,
+        "stop" : 1721916765337,
+        "duration" : 382
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "GET 200 https://gorest.co.in/public/v2/users",
         "time" : {
-          "start" : 1721830440546,
-          "stop" : 1721830440947,
-          "duration" : 401
+          "start" : 1721916764957,
+          "stop" : 1721916765334,
+          "duration" : 377
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,8 +40,8 @@
       }, {
         "name" : "as (\"getAllUsers\")",
         "time" : {
-          "start" : 1721830440947,
-          "stop" : 1721830440949,
+          "start" : 1721916765334,
+          "stop" : 1721916765336,
           "duration" : 2
         },
         "status" : "passed",
@@ -62,16 +62,16 @@
     }, {
       "name" : "Then validate status code 200 to get all users",
       "time" : {
-        "start" : 1721830440950,
-        "stop" : 1721830440957,
-        "duration" : 7
+        "start" : 1721916765337,
+        "stop" : 1721916765345,
+        "duration" : 8
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get @getAllUsers",
         "time" : {
-          "start" : 1721830440951,
-          "stop" : 1721830440953,
+          "start" : 1721916765338,
+          "stop" : 1721916765340,
           "duration" : 2
         },
         "status" : "passed",
@@ -85,8 +85,8 @@
       }, {
         "name" : "assert expected **200** to equal **200**",
         "time" : {
-          "start" : 1721830440956,
-          "stop" : 1721830440956,
+          "start" : 1721916765343,
+          "stop" : 1721916765343,
           "duration" : 0
         },
         "status" : "passed",
@@ -113,16 +113,16 @@
     }, {
       "name" : "And validate the contract schema to get all users",
       "time" : {
-        "start" : 1721830440957,
-        "stop" : 1721830440999,
-        "duration" : 42
+        "start" : 1721916765345,
+        "stop" : 1721916765388,
+        "duration" : 43
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get @getAllUsers",
         "time" : {
-          "start" : 1721830440958,
-          "stop" : 1721830440959,
+          "start" : 1721916765346,
+          "stop" : 1721916765347,
           "duration" : 1
         },
         "status" : "passed",
@@ -136,8 +136,8 @@
       }, {
         "name" : "fixture (\"getAllUsersContractSchema\")",
         "time" : {
-          "start" : 1721830440959,
-          "stop" : 1721830440967,
+          "start" : 1721916765347,
+          "stop" : 1721916765355,
           "duration" : 8
         },
         "status" : "passed",
@@ -202,17 +202,17 @@
         "total" : 2
       },
       "items" : [ {
-        "uid" : "2b5c124e71cac340",
+        "uid" : "518a43c6c8042b11",
         "status" : "passed",
         "time" : {
-          "start" : 1721830440535,
-          "stop" : 1721830441000,
-          "duration" : 465
+          "start" : 1721916764944,
+          "stop" : 1721916765389,
+          "duration" : 445
         }
       } ]
     },
     "tags" : [ "Sanity" ]
   },
-  "source" : "7512b209d5a71720.json",
+  "source" : "a4c2886a8fede92b.json",
   "parameterValues" : [ ]
 }
