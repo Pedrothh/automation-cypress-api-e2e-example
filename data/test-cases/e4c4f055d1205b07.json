@@ -1,12 +1,12 @@
 {
-  "uid" : "a5ab005196afe5b9",
+  "uid" : "e4c4f055d1205b07",
   "name" : "Get all users",
   "fullName" : "Get all users",
   "historyId" : "fe8c4b2e419b20c745584ac3356ef8e7",
   "time" : {
-    "start" : 1722953595012,
-    "stop" : 1722953595397,
-    "duration" : 385
+    "start" : 1723040003112,
+    "stop" : 1723040004236,
+    "duration" : 1124
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Given I get all users",
       "time" : {
-        "start" : 1722953595022,
-        "stop" : 1722953595347,
-        "duration" : 325
+        "start" : 1723040003122,
+        "stop" : 1723040004163,
+        "duration" : 1041
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "GET 200 https://gorest.co.in/public/v2/users",
         "time" : {
-          "start" : 1722953595024,
-          "stop" : 1722953595343,
-          "duration" : 319
+          "start" : 1723040003124,
+          "stop" : 1723040004157,
+          "duration" : 1033
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,9 +40,9 @@
       }, {
         "name" : "as (\"getAllUsers\")",
         "time" : {
-          "start" : 1722953595343,
-          "stop" : 1722953595345,
-          "duration" : 2
+          "start" : 1723040004157,
+          "stop" : 1723040004160,
+          "duration" : 3
         },
         "status" : "passed",
         "steps" : [ ],
@@ -62,17 +62,17 @@
     }, {
       "name" : "Then validate status code 200 to get all users",
       "time" : {
-        "start" : 1722953595347,
-        "stop" : 1722953595356,
-        "duration" : 9
+        "start" : 1723040004163,
+        "stop" : 1723040004175,
+        "duration" : 12
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get @getAllUsers",
         "time" : {
-          "start" : 1722953595348,
-          "stop" : 1722953595350,
-          "duration" : 2
+          "start" : 1723040004164,
+          "stop" : 1723040004168,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -85,9 +85,9 @@
       }, {
         "name" : "assert expected **200** to equal **200**",
         "time" : {
-          "start" : 1722953595354,
-          "stop" : 1722953595355,
-          "duration" : 1
+          "start" : 1723040004173,
+          "stop" : 1723040004173,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -113,17 +113,17 @@
     }, {
       "name" : "And validate the contract schema to get all users",
       "time" : {
-        "start" : 1722953595356,
-        "stop" : 1722953595396,
-        "duration" : 40
+        "start" : 1723040004175,
+        "stop" : 1723040004235,
+        "duration" : 60
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get @getAllUsers",
         "time" : {
-          "start" : 1722953595356,
-          "stop" : 1722953595357,
-          "duration" : 1
+          "start" : 1723040004176,
+          "stop" : 1723040004178,
+          "duration" : 2
         },
         "status" : "passed",
         "steps" : [ ],
@@ -136,9 +136,9 @@
       }, {
         "name" : "fixture (\"getAllUsersContractSchema\")",
         "time" : {
-          "start" : 1722953595358,
-          "stop" : 1722953595365,
-          "duration" : 7
+          "start" : 1723040004178,
+          "stop" : 1723040004203,
+          "duration" : 25
         },
         "status" : "passed",
         "steps" : [ ],
@@ -202,17 +202,17 @@
         "total" : 2
       },
       "items" : [ {
-        "uid" : "aecae0011b1aa522",
+        "uid" : "f64ce6e91fca0811",
         "status" : "passed",
         "time" : {
-          "start" : 1722953595012,
-          "stop" : 1722953595397,
-          "duration" : 385
+          "start" : 1723040003112,
+          "stop" : 1723040004236,
+          "duration" : 1124
         }
       } ]
     },
     "tags" : [ "Sanity" ]
   },
-  "source" : "a5ab005196afe5b9.json",
+  "source" : "e4c4f055d1205b07.json",
   "parameterValues" : [ ]
 }
