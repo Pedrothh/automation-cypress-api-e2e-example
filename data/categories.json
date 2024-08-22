@@ -1,77 +1,48 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test passed",
+    "name" : "Test failed",
     "children" : [ {
+      "name" : "`cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
       "children" : [ {
         "name" : "Get all users",
-        "uid" : "9b28eea63a758605",
-        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
-        "status" : "passed",
+        "uid" : "7edd334fe5a8cd73",
+        "parentUid" : "d6ed3bade5ca683c527055848041c177",
+        "status" : "failed",
         "time" : {
-          "start" : 1724249684213,
-          "stop" : 1724249684658,
-          "duration" : 445
+          "start" : 1724336021663,
+          "stop" : 1724336051888,
+          "duration" : 30225
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Get specific user",
-        "uid" : "73abb25edda03f00",
-        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
-        "status" : "passed",
+        "uid" : "1f6be51a5010e154",
+        "parentUid" : "d6ed3bade5ca683c527055848041c177",
+        "status" : "failed",
         "time" : {
-          "start" : 1724249684664,
-          "stop" : 1724249685602,
-          "duration" : 938
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "NewTour Start application",
-        "uid" : "28d1482e931ea18f",
-        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
-        "status" : "passed",
-        "time" : {
-          "start" : 1724249690996,
-          "stop" : 1724249697487,
-          "duration" : 6491
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "NewTour Login",
-        "uid" : "65f269e349fd8f31",
-        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
-        "status" : "passed",
-        "time" : {
-          "start" : 1724249697514,
-          "stop" : 1724249701970,
-          "duration" : 4456
+          "start" : 1724336051924,
+          "stop" : 1724336082083,
+          "duration" : 30159
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "9c80a0c1559ab612131af073d4d469b3"
-    } ],
-    "uid" : "bf711d51452b6be752b9682737c0edfd"
-  }, {
-    "name" : "Test failed",
-    "children" : [ {
+      "uid" : "d6ed3bade5ca683c527055848041c177"
+    }, {
       "name" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
       "children" : [ {
         "name" : "NewTour Login Fail",
-        "uid" : "71a9362eb27fa812",
+        "uid" : "6b9e488513bf11f1",
         "parentUid" : "8e5cd47dd6c5766186e450f6e06f2cc3",
         "status" : "failed",
         "time" : {
-          "start" : 1724249702017,
-          "stop" : 1724249710809,
-          "duration" : 8792
+          "start" : 1724336108362,
+          "stop" : 1724336117850,
+          "duration" : 9488
         },
         "flaky" : false,
         "newFailed" : false,
@@ -80,6 +51,39 @@
       "uid" : "8e5cd47dd6c5766186e450f6e06f2cc3"
     } ],
     "uid" : "6f954d88a7c526d172b7c6798d380845"
+  }, {
+    "name" : "Test passed",
+    "children" : [ {
+      "children" : [ {
+        "name" : "NewTour Start application",
+        "uid" : "6a61af624b921c7b",
+        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1724336094482,
+          "stop" : 1724336102470,
+          "duration" : 7988
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "NewTour Login",
+        "uid" : "2d7397d2c4d7edec",
+        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1724336102495,
+          "stop" : 1724336108324,
+          "duration" : 5829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9c80a0c1559ab612131af073d4d469b3"
+    } ],
+    "uid" : "bf711d51452b6be752b9682737c0edfd"
   } ],
   "name" : "categories"
 }
