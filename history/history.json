@@ -9,22 +9,22 @@
       "total" : 2
     },
     "items" : [ {
-      "uid" : "b90b9e1d185e53dd",
+      "uid" : "37d56ac34f87ff3f",
       "status" : "failed",
       "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
       "time" : {
-        "start" : 1726496123476,
-        "stop" : 1726496131706,
-        "duration" : 8230
+        "start" : 1726582573321,
+        "stop" : 1726582581604,
+        "duration" : 8283
       }
     }, {
-      "uid" : "51222ef392a44a11",
+      "uid" : "fb45157c35e5f36e",
       "status" : "failed",
       "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
       "time" : {
-        "start" : 1726496123476,
-        "stop" : 1726496131706,
-        "duration" : 8230
+        "start" : 1726582573321,
+        "stop" : 1726582581604,
+        "duration" : 8283
       }
     } ]
   },
@@ -38,20 +38,20 @@
       "total" : 2
     },
     "items" : [ {
-      "uid" : "efd39d0c4ff2a959",
+      "uid" : "189ebe6c11ae8c87",
       "status" : "passed",
       "time" : {
-        "start" : 1726496114936,
-        "stop" : 1726496119078,
-        "duration" : 4142
+        "start" : 1726582564559,
+        "stop" : 1726582568849,
+        "duration" : 4290
       }
     }, {
-      "uid" : "eb85b34fc4894555",
+      "uid" : "7e7889f10c4d6e7c",
       "status" : "passed",
       "time" : {
-        "start" : 1726496114936,
-        "stop" : 1726496119078,
-        "duration" : 4142
+        "start" : 1726582564559,
+        "stop" : 1726582568849,
+        "duration" : 4290
       }
     } ]
   },
@@ -65,74 +65,78 @@
       "total" : 2
     },
     "items" : [ {
-      "uid" : "e3fa5486ed3fd7e",
+      "uid" : "6dea7267453d9d08",
       "status" : "passed",
       "time" : {
-        "start" : 1726496119102,
-        "stop" : 1726496123435,
-        "duration" : 4333
+        "start" : 1726582568873,
+        "stop" : 1726582573279,
+        "duration" : 4406
       }
     }, {
-      "uid" : "c8919631dfb89626",
+      "uid" : "f2776f7307a96ccd",
       "status" : "passed",
       "time" : {
-        "start" : 1726496119102,
-        "stop" : 1726496123435,
-        "duration" : 4333
-      }
-    } ]
-  },
-  "f41e8575b52aef63d4a34f25218307cb" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
-      "unknown" : 0,
-      "total" : 2
-    },
-    "items" : [ {
-      "uid" : "10d1fe73ef78e449",
-      "status" : "passed",
-      "time" : {
-        "start" : 1726496108847,
-        "stop" : 1726496109455,
-        "duration" : 608
-      }
-    }, {
-      "uid" : "f5cbe0f0768cbec1",
-      "status" : "passed",
-      "time" : {
-        "start" : 1726496108847,
-        "stop" : 1726496109455,
-        "duration" : 608
+        "start" : 1726582568873,
+        "stop" : 1726582573279,
+        "duration" : 4406
       }
     } ]
   },
   "fe8c4b2e419b20c745584ac3356ef8e7" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 2
     },
     "items" : [ {
-      "uid" : "5eb82cfa9854754d",
-      "status" : "passed",
+      "uid" : "1f65d7cc10de04ee",
+      "status" : "failed",
+      "statusDetails" : "`cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
       "time" : {
-        "start" : 1726496108438,
-        "stop" : 1726496108841,
-        "duration" : 403
+        "start" : 1726582492010,
+        "stop" : 1726582522225,
+        "duration" : 30215
       }
     }, {
-      "uid" : "68376bc005e62211",
-      "status" : "passed",
+      "uid" : "6b1e77824cd28b37",
+      "status" : "failed",
+      "statusDetails" : "`cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
       "time" : {
-        "start" : 1726496108438,
-        "stop" : 1726496108841,
-        "duration" : 403
+        "start" : 1726582492010,
+        "stop" : 1726582522225,
+        "duration" : 30215
+      }
+    } ]
+  },
+  "f41e8575b52aef63d4a34f25218307cb" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "98df8fc75cc41d1",
+      "status" : "failed",
+      "statusDetails" : "`cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
+      "time" : {
+        "start" : 1726582522387,
+        "stop" : 1726582552553,
+        "duration" : 30166
+      }
+    }, {
+      "uid" : "d49e41c5227670ae",
+      "status" : "failed",
+      "statusDetails" : "`cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
+      "time" : {
+        "start" : 1726582522387,
+        "stop" : 1726582552553,
+        "duration" : 30166
       }
     } ]
   }
