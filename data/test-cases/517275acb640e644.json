@@ -1,33 +1,37 @@
 {
-  "uid" : "97bb2e716a3f23ab",
-  "name" : "NewTour Login",
-  "fullName" : "NewTour Login",
-  "historyId" : "f594dabc0360e44565422352dbe8e07f",
+  "uid" : "517275acb640e644",
+  "name" : "NewTour Login Fail",
+  "fullName" : "NewTour Login Fail",
+  "historyId" : "e04c1f405a2bcde90ad66f0173ca0580",
   "time" : {
-    "start" : 1726668957592,
-    "stop" : 1726668962472,
-    "duration" : 4880
+    "start" : 1726755261371,
+    "stop" : 1726755270335,
+    "duration" : 8964
   },
-  "status" : "passed",
+  "status" : "failed",
+  "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
+  "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.\n    at LoginPage.validarText (cypress/e2e/pages/BasePage.js:44:22)\n    at LoginPage.shouldSeeTheMessageLoginSuccessfully (cypress/e2e/pages/LoginPage.js:25:9)\n    at Context.eval (cypress/e2e/newtours/newtours.js:62:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ ],
   "testStage" : {
-    "status" : "passed",
+    "status" : "failed",
+    "statusMessage" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
+    "statusTrace" : "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.\n    at LoginPage.validarText (cypress/e2e/pages/BasePage.js:44:22)\n    at LoginPage.shouldSeeTheMessageLoginSuccessfully (cypress/e2e/pages/LoginPage.js:25:9)\n    at Context.eval (cypress/e2e/newtours/newtours.js:62:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
     "steps" : [ {
       "name" : "Given I visit new tour application",
       "time" : {
-        "start" : 1726668957642,
-        "stop" : 1726668958314,
-        "duration" : 672
+        "start" : 1726755261441,
+        "stop" : 1726755262066,
+        "duration" : 625
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit /",
         "time" : {
-          "start" : 1726668957642,
-          "stop" : 1726668958313,
-          "duration" : 671
+          "start" : 1726755261442,
+          "stop" : 1726755262065,
+          "duration" : 623
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,8 +44,8 @@
       }, {
         "name" : "/ request",
         "time" : {
-          "start" : 1726668958313,
-          "stop" : 1726668958313,
+          "start" : 1726755262065,
+          "stop" : 1726755262065,
           "duration" : 0
         },
         "status" : "passed",
@@ -62,17 +66,17 @@
     }, {
       "name" : "And I enter user name \"testepedro\"",
       "time" : {
-        "start" : 1726668958314,
-        "stop" : 1726668958782,
-        "duration" : 468
+        "start" : 1726755262066,
+        "stop" : 1726755262456,
+        "duration" : 390
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get input[name=\"userName\"]",
         "time" : {
-          "start" : 1726668958316,
-          "stop" : 1726668958329,
-          "duration" : 13
+          "start" : 1726755262067,
+          "stop" : 1726755262071,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -85,9 +89,9 @@
       }, {
         "name" : "click",
         "time" : {
-          "start" : 1726668958329,
-          "stop" : 1726668958451,
-          "duration" : 122
+          "start" : 1726755262071,
+          "stop" : 1726755262164,
+          "duration" : 93
         },
         "status" : "passed",
         "steps" : [ ],
@@ -100,9 +104,9 @@
       }, {
         "name" : "get input[name=\"userName\"]",
         "time" : {
-          "start" : 1726668958451,
-          "stop" : 1726668958458,
-          "duration" : 7
+          "start" : 1726755262164,
+          "stop" : 1726755262169,
+          "duration" : 5
         },
         "status" : "passed",
         "steps" : [ ],
@@ -115,9 +119,9 @@
       }, {
         "name" : "clear",
         "time" : {
-          "start" : 1726668958458,
-          "stop" : 1726668958561,
-          "duration" : 103
+          "start" : 1726755262169,
+          "stop" : 1726755262258,
+          "duration" : 89
         },
         "status" : "passed",
         "steps" : [ ],
@@ -130,9 +134,9 @@
       }, {
         "name" : "get input[name=\"userName\"]",
         "time" : {
-          "start" : 1726668958561,
-          "stop" : 1726668958568,
-          "duration" : 7
+          "start" : 1726755262258,
+          "stop" : 1726755262264,
+          "duration" : 6
         },
         "status" : "passed",
         "steps" : [ ],
@@ -145,9 +149,9 @@
       }, {
         "name" : "type testepedro",
         "time" : {
-          "start" : 1726668958568,
-          "stop" : 1726668958781,
-          "duration" : 213
+          "start" : 1726755262264,
+          "stop" : 1726755262454,
+          "duration" : 190
         },
         "status" : "passed",
         "steps" : [ ],
@@ -165,18 +169,18 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "And I enter password \"123456\"",
+      "name" : "And I enter password \"1\"",
       "time" : {
-        "start" : 1726668958782,
-        "stop" : 1726668959105,
-        "duration" : 323
+        "start" : 1726755262456,
+        "stop" : 1726755262722,
+        "duration" : 266
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get input[name=\"password\"]",
         "time" : {
-          "start" : 1726668958783,
-          "stop" : 1726668958787,
+          "start" : 1726755262456,
+          "stop" : 1726755262460,
           "duration" : 4
         },
         "status" : "passed",
@@ -190,9 +194,9 @@
       }, {
         "name" : "click",
         "time" : {
-          "start" : 1726668958787,
-          "stop" : 1726668958878,
-          "duration" : 91
+          "start" : 1726755262460,
+          "stop" : 1726755262553,
+          "duration" : 93
         },
         "status" : "passed",
         "steps" : [ ],
@@ -205,9 +209,9 @@
       }, {
         "name" : "get input[name=\"password\"]",
         "time" : {
-          "start" : 1726668958878,
-          "stop" : 1726668958883,
-          "duration" : 5
+          "start" : 1726755262554,
+          "stop" : 1726755262558,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -220,8 +224,8 @@
       }, {
         "name" : "clear",
         "time" : {
-          "start" : 1726668958883,
-          "stop" : 1726668958966,
+          "start" : 1726755262558,
+          "stop" : 1726755262641,
           "duration" : 83
         },
         "status" : "passed",
@@ -235,9 +239,9 @@
       }, {
         "name" : "get input[name=\"password\"]",
         "time" : {
-          "start" : 1726668958966,
-          "stop" : 1726668958971,
-          "duration" : 5
+          "start" : 1726755262641,
+          "stop" : 1726755262647,
+          "duration" : 6
         },
         "status" : "passed",
         "steps" : [ ],
@@ -248,11 +252,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "type 123456",
+        "name" : "type 1",
         "time" : {
-          "start" : 1726668958971,
-          "stop" : 1726668959104,
-          "duration" : 133
+          "start" : 1726755262647,
+          "stop" : 1726755262720,
+          "duration" : 73
         },
         "status" : "passed",
         "steps" : [ ],
@@ -272,17 +276,17 @@
     }, {
       "name" : "When I press the submit button",
       "time" : {
-        "start" : 1726668959105,
-        "stop" : 1726668959853,
-        "duration" : 748
+        "start" : 1726755262722,
+        "stop" : 1726755263362,
+        "duration" : 640
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get input[name=\"submit\"]",
         "time" : {
-          "start" : 1726668959106,
-          "stop" : 1726668959110,
-          "duration" : 4
+          "start" : 1726755262722,
+          "stop" : 1726755262728,
+          "duration" : 6
         },
         "status" : "passed",
         "steps" : [ ],
@@ -295,9 +299,9 @@
       }, {
         "name" : "click",
         "time" : {
-          "start" : 1726668959110,
-          "stop" : 1726668959202,
-          "duration" : 92
+          "start" : 1726755262728,
+          "stop" : 1726755262822,
+          "duration" : 94
         },
         "status" : "passed",
         "steps" : [ ],
@@ -310,8 +314,8 @@
       }, {
         "name" : "form sub --submitting form--",
         "time" : {
-          "start" : 1726668959202,
-          "stop" : 1726668959202,
+          "start" : 1726755262822,
+          "stop" : 1726755262822,
           "duration" : 0
         },
         "status" : "passed",
@@ -325,23 +329,8 @@
       }, {
         "name" : "page load --waiting for new page to load--",
         "time" : {
-          "start" : 1726668959202,
-          "stop" : 1726668959202,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "new url https://demo.guru99.com/test/newtours/login_sucess.php",
-        "time" : {
-          "start" : 1726668959851,
-          "stop" : 1726668959851,
+          "start" : 1726755262822,
+          "stop" : 1726755262822,
           "duration" : 0
         },
         "status" : "passed",
@@ -355,8 +344,23 @@
       }, {
         "name" : "function(){} request",
         "time" : {
-          "start" : 1726668959851,
-          "stop" : 1726668959851,
+          "start" : 1726755263361,
+          "stop" : 1726755263361,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "new url https://demo.guru99.com/test/newtours/index.php",
+        "time" : {
+          "start" : 1726755263361,
+          "stop" : 1726755263361,
           "duration" : 0
         },
         "status" : "passed",
@@ -377,25 +381,25 @@
     }, {
       "name" : "Then I should see web audit results",
       "time" : {
-        "start" : 1726668959852,
-        "stop" : 1726668962458,
-        "duration" : 2606
+        "start" : 1726755263362,
+        "stop" : 1726755266005,
+        "duration" : 2643
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "lighthouse (\"{ performance: 95, accessibility: 100, 'best-practices': 95, seo: 85, pwa: 100, 'first-contentful-paint': 10 }\"; \"{ formFactor: 'desktop', screenEmulation: { mobile: false, disable: false, width: 1000, height: 660, deviceScaleRatio: 1 } }\")",
         "time" : {
-          "start" : 1726668959854,
-          "stop" : 1726668959855,
+          "start" : 1726755263364,
+          "stop" : 1726755263365,
           "duration" : 1
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "log cy.lighthouse(), Electron is not supported. Skipping...",
           "time" : {
-            "start" : 1726668959854,
-            "stop" : 1726668959855,
-            "duration" : 1
+            "start" : 1726755263364,
+            "stop" : 1726755263364,
+            "duration" : 0
           },
           "status" : "passed",
           "steps" : [ ],
@@ -415,9 +419,9 @@
       }, {
         "name" : "wait 2000",
         "time" : {
-          "start" : 1726668959855,
-          "stop" : 1726668961856,
-          "duration" : 2001
+          "start" : 1726755263365,
+          "stop" : 1726755265365,
+          "duration" : 2000
         },
         "status" : "passed",
         "steps" : [ ],
@@ -430,9 +434,9 @@
       }, {
         "name" : "screenshot",
         "time" : {
-          "start" : 1726668961856,
-          "stop" : 1726668962454,
-          "duration" : 598
+          "start" : 1726755265365,
+          "stop" : 1726755266002,
+          "duration" : 637
         },
         "status" : "passed",
         "steps" : [ ],
@@ -452,17 +456,17 @@
     }, {
       "name" : "And I should see the message \"Login Successfully\"",
       "time" : {
-        "start" : 1726668962458,
-        "stop" : 1726668962472,
-        "duration" : 14
+        "start" : 1726755266005,
+        "stop" : 1726755270334,
+        "duration" : 4329
       },
-      "status" : "passed",
+      "status" : "failed",
       "steps" : [ {
-        "name" : "get body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)",
+        "name" : "get (\"body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)\")",
         "time" : {
-          "start" : 1726668962459,
-          "stop" : 1726668962470,
-          "duration" : 11
+          "start" : 1726755266006,
+          "stop" : 1726755270334,
+          "duration" : 4328
         },
         "status" : "passed",
         "steps" : [ ],
@@ -473,13 +477,13 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "assert expected **<h3>** to contain **Login Successfully**",
+        "name" : "get body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)",
         "time" : {
-          "start" : 1726668962470,
-          "stop" : 1726668962470,
+          "start" : 1726755270333,
+          "stop" : 1726755270333,
           "duration" : 0
         },
-        "status" : "passed",
+        "status" : "failed",
         "steps" : [ ],
         "attachments" : [ ],
         "parameters" : [ ],
@@ -496,16 +500,28 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "83170ad8a3966671",
-      "name" : "cypress/e2e/newtours.feature:2024-09-18T14:16:02.064Z",
-      "source" : "83170ad8a3966671.png",
+      "uid" : "ad2d1e8d5c6b7381",
+      "name" : "cypress/e2e/newtours.feature:2024-09-19T14:14:25.589Z",
+      "source" : "ad2d1e8d5c6b7381.png",
       "type" : "image/png",
-      "size" : 103958
+      "size" : 216151
+    }, {
+      "uid" : "cd53537425f9fcd9",
+      "name" : "cypress/e2e/newtours.feature:2024-09-19T14:14:30.018Z",
+      "source" : "cd53537425f9fcd9.png",
+      "type" : "image/png",
+      "size" : 316082
+    }, {
+      "uid" : "b145f1648e5f0176",
+      "name" : "video recording",
+      "source" : "b145f1648e5f0176.mp4",
+      "type" : "video/mp4",
+      "size" : 3059547
     } ],
     "parameters" : [ ],
     "stepsCount" : 32,
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
     "hasContent" : true
   },
   "afterStages" : [ ],
@@ -520,7 +536,7 @@
     "value" : "NewTour Verification"
   }, {
     "name" : "tag",
-    "value" : "smoke1"
+    "value" : "testFail"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -533,31 +549,32 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ {
-      "name" : "Test passed",
-      "matchedStatuses" : [ "passed" ],
+      "name" : "Test failed",
+      "matchedStatuses" : [ "failed" ],
       "flaky" : false
     } ],
     "history" : {
       "statistic" : {
-        "failed" : 0,
+        "failed" : 2,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 2,
+        "passed" : 0,
         "unknown" : 0,
         "total" : 2
       },
       "items" : [ {
-        "uid" : "c8a213ed30e560d1",
-        "status" : "passed",
+        "uid" : "d6f8d53a4e35fcbd",
+        "status" : "failed",
+        "statusDetails" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
         "time" : {
-          "start" : 1726668957592,
-          "stop" : 1726668962472,
-          "duration" : 4880
+          "start" : 1726755261371,
+          "stop" : 1726755270335,
+          "duration" : 8964
         }
       } ]
     },
-    "tags" : [ "smoke1" ]
+    "tags" : [ "testFail" ]
   },
-  "source" : "97bb2e716a3f23ab.json",
+  "source" : "517275acb640e644.json",
   "parameterValues" : [ ]
 }
