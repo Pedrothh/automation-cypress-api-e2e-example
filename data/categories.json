@@ -1,85 +1,56 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test failed",
-    "children" : [ {
-      "name" : "`cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users\n\nThe response we received from your web server was:\n\n  > 523: Unknown Status Code\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/12.10.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 523 - Unknown Status Code\nHeaders: {\n  \"date\": \"Thu, 19 Sep 2024 14:14:00 GMT\",\n  \"content-type\": \"text/html; charset=UTF-8\",\n  \"content-length\": \"7012\",\n  \"connection\": \"keep-alive\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=qAFVkty7KWAisZQQs71Kj%2BPntTaNBYEW1uHNUKebQqZX2f1noA1AO9ZRjU%2BpSp8E87L0%2BTTE0Z38V8uJutNB1JQBMR3b0hClnj2FuzOpSae%2BLfHNwRaxdk1I6jKYUkc%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"referrer-policy\": \"same-origin\",\n  \"cache-control\": \"private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\",\n  \"expires\": \"Thu, 01 Jan 1970 00:00:01 GMT\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8c5a2de4df81fa36-SJC\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\"\n}\nBody: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>gorest.co.in | 523: Origin is unreachable</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/main.css\" />\n\n</head>\n<body>\n<div id=\"cf-wrapper\">\n    <div id=\"cf-error-details\" class=\"p-0\">\n        <header class=\"mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8\">\n  <h1 class=\"inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2\">\n    <span class=\"inline-block\">Origin is unreachable</span>\n    <span class=\"code-label\">Error code 523</span>\n  </h1>\n  <div>\n     Visit <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_523&utm_campaign=gorest.co.in\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a> for more information.\n  </div>\n  <div class=\"mt-3\">2024-09-19 14:14:00 UTC</div>\n        </header>\n        <div class=\"my-8 bg-gradient-gray\">\n  <div class=\"w-240 lg:w-full mx-auto\">\n      <div class=\"clearfix md:px-8\">\n        \n<div id=\"cf-browser-status\" class=\" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    \n    <span class=\"cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class...\n\n\nhttps://on.cypress.io/request",
-      "children" : [ {
-        "name" : "Get all users",
-        "uid" : "df23233c9129bcb1",
-        "parentUid" : "2154e7378293f23440cb7efb6eef102b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1726755236572,
-          "stop" : 1726755240847,
-          "duration" : 4275
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "2154e7378293f23440cb7efb6eef102b"
-    }, {
-      "name" : "`cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users\n\nThe response we received from your web server was:\n\n  > 523: Unknown Status Code\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/12.10.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\"\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 523 - Unknown Status Code\nHeaders: {\n  \"date\": \"Thu, 19 Sep 2024 14:14:03 GMT\",\n  \"content-type\": \"text/html; charset=UTF-8\",\n  \"content-length\": \"7012\",\n  \"connection\": \"keep-alive\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=c1F%2BzamtcmSHFXJzDkEYXy1TsMfBnXbK5r5Dr1RLGMXZp%2BWgaKLBOHbgOVWXxfHCTL3wlrjXQ5OyK15MMJTyKt8%2F8mRHijOvPSf0k%2FnZ5%2FRxF9N3%2Fnq3MvWt3UDqBbQ%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"referrer-policy\": \"same-origin\",\n  \"cache-control\": \"private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0\",\n  \"expires\": \"Thu, 01 Jan 1970 00:00:01 GMT\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8c5a2dffddb5fa36-SJC\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\"\n}\nBody: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>gorest.co.in | 523: Origin is unreachable</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/main.css\" />\n\n</head>\n<body>\n<div id=\"cf-wrapper\">\n    <div id=\"cf-error-details\" class=\"p-0\">\n        <header class=\"mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8\">\n  <h1 class=\"inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2\">\n    <span class=\"inline-block\">Origin is unreachable</span>\n    <span class=\"code-label\">Error code 523</span>\n  </h1>\n  <div>\n     Visit <a href=\"https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_523&utm_campaign=gorest.co.in\" target=\"_blank\" rel=\"noopener noreferrer\">cloudflare.com</a> for more information.\n  </div>\n  <div class=\"mt-3\">2024-09-19 14:14:03 UTC</div>\n        </header>\n        <div class=\"my-8 bg-gradient-gray\">\n  <div class=\"w-240 lg:w-full mx-auto\">\n      <div class=\"clearfix md:px-8\">\n        \n<div id=\"cf-browser-status\" class=\" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center\">\n  <div class=\"relative mb-10 md:m-0\">\n    \n    <span class=\"cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat\"></span>\n    <span class...\n\n\nhttps://on.cypress.io/request",
-      "children" : [ {
-        "name" : "Get specific user",
-        "uid" : "5735d86213859989",
-        "parentUid" : "78b3995b42b56de7206856c609387b8e",
-        "status" : "failed",
-        "time" : {
-          "start" : 1726755240890,
-          "stop" : 1726755243832,
-          "duration" : 2942
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "78b3995b42b56de7206856c609387b8e"
-    }, {
-      "name" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
-      "children" : [ {
-        "name" : "NewTour Login Fail",
-        "uid" : "517275acb640e644",
-        "parentUid" : "8e5cd47dd6c5766186e450f6e06f2cc3",
-        "status" : "failed",
-        "time" : {
-          "start" : 1726755261371,
-          "stop" : 1726755270335,
-          "duration" : 8964
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "8e5cd47dd6c5766186e450f6e06f2cc3"
-    } ],
-    "uid" : "6f954d88a7c526d172b7c6798d380845"
-  }, {
     "name" : "Test passed",
     "children" : [ {
       "children" : [ {
-        "name" : "NewTour Start application",
-        "uid" : "a966e13a21556d15",
+        "name" : "Get all users",
+        "uid" : "f455a344be9c4a",
         "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
         "status" : "passed",
         "time" : {
-          "start" : 1726755251769,
-          "stop" : 1726755256244,
-          "duration" : 4475
+          "start" : 1726841689635,
+          "stop" : 1726841690582,
+          "duration" : 947
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Get specific user",
+        "uid" : "bbaa55f939f70ac4",
+        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726841690588,
+          "stop" : 1726841691332,
+          "duration" : 744
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "NewTour Start application",
+        "uid" : "fa1ad6b4bf5106c5",
+        "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1726841697198,
+          "stop" : 1726841701248,
+          "duration" : 4050
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "NewTour Login",
-        "uid" : "1544e44a9e959fd9",
+        "uid" : "d122d63e8db042d3",
         "parentUid" : "9c80a0c1559ab612131af073d4d469b3",
         "status" : "passed",
         "time" : {
-          "start" : 1726755256292,
-          "stop" : 1726755261328,
-          "duration" : 5036
+          "start" : 1726841701273,
+          "stop" : 1726841705644,
+          "duration" : 4371
         },
         "flaky" : false,
         "newFailed" : false,
@@ -88,6 +59,27 @@
       "uid" : "9c80a0c1559ab612131af073d4d469b3"
     } ],
     "uid" : "bf711d51452b6be752b9682737c0edfd"
+  }, {
+    "name" : "Test failed",
+    "children" : [ {
+      "name" : "Timed out retrying after 4000ms: Expected to find element: `body > div:nth-child(5) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)`, but never found it.",
+      "children" : [ {
+        "name" : "NewTour Login Fail",
+        "uid" : "fbb56d7a8e67f87",
+        "parentUid" : "8e5cd47dd6c5766186e450f6e06f2cc3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1726841705690,
+          "stop" : 1726841714037,
+          "duration" : 8347
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8e5cd47dd6c5766186e450f6e06f2cc3"
+    } ],
+    "uid" : "6f954d88a7c526d172b7c6798d380845"
   } ],
   "name" : "categories"
 }
