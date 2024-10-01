@@ -1,0 +1,124 @@
+{
+  "uid" : "e34f9d2a2f5b2247",
+  "name" : "Get all users",
+  "fullName" : "Get all users",
+  "historyId" : "fe8c4b2e419b20c745584ac3356ef8e7",
+  "time" : {
+    "start" : 1727792110190,
+    "stop" : 1727792140400,
+    "duration" : 30210
+  },
+  "status" : "failed",
+  "statusMessage" : "`cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
+  "statusTrace" : "CypressError: `cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:151775:78)\n    at tryCatcher (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20941:23)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:16063:41)\n    at tryCatcher (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20941:23)\n    at Promise._settlePromiseFromHandler (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18876:31)\n    at Promise._settlePromise (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18933:18)\n    at Promise._settlePromise0 (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18978:10)\n    at Promise._settlePromises (https://demo.guru99.com/__cypress/runner/cypress_runner.js:19054:18)\n    at _drainQueueStep (https://demo.guru99.com/__cypress/runner/cypress_runner.js:15648:12)\n    at _drainQueue (https://demo.guru99.com/__cypress/runner/cypress_runner.js:15641:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://demo.guru99.com/__cypress/runner/cypress_runner.js:15657:5)\n    at Async.drainQueues (https://demo.guru99.com/__cypress/runner/cypress_runner.js:15527:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/apitest/apitest.js:12:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "`cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
+    "statusTrace" : "CypressError: `cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:151775:78)\n    at tryCatcher (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20941:23)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:16063:41)\n    at tryCatcher (https://demo.guru99.com/__cypress/runner/cypress_runner.js:20941:23)\n    at Promise._settlePromiseFromHandler (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18876:31)\n    at Promise._settlePromise (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18933:18)\n    at Promise._settlePromise0 (https://demo.guru99.com/__cypress/runner/cypress_runner.js:18978:10)\n    at Promise._settlePromises (https://demo.guru99.com/__cypress/runner/cypress_runner.js:19054:18)\n    at _drainQueueStep (https://demo.guru99.com/__cypress/runner/cypress_runner.js:15648:12)\n    at _drainQueue (https://demo.guru99.com/__cypress/runner/cypress_runner.js:15641:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://demo.guru99.com/__cypress/runner/cypress_runner.js:15657:5)\n    at Async.drainQueues (https://demo.guru99.com/__cypress/runner/cypress_runner.js:15527:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/apitest/apitest.js:12:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+    "steps" : [ {
+      "name" : "Given I get all users",
+      "time" : {
+        "start" : 1727792110200,
+        "stop" : 1727792140398,
+        "duration" : 30198
+      },
+      "status" : "failed",
+      "steps" : [ {
+        "name" : "GET --- https://gorest.co.in/public/v2/users",
+        "time" : {
+          "start" : 1727792110202,
+          "stop" : 1727792140398,
+          "duration" : 30196
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "c61091dbc18caadc",
+      "name" : "cypress/e2e/apitest.feature:2024-10-01T14:15:40.243Z",
+      "source" : "c61091dbc18caadc.png",
+      "type" : "image/png",
+      "size" : 45422
+    }, {
+      "uid" : "274487a1620cd6c5",
+      "name" : "video recording",
+      "source" : "274487a1620cd6c5.mp4",
+      "type" : "video/mp4",
+      "size" : 1294994
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress.e2e.apitest.feature"
+  }, {
+    "name" : "suite",
+    "value" : "APITest"
+  }, {
+    "name" : "feature",
+    "value" : "APITest"
+  }, {
+    "name" : "tag",
+    "value" : "Sanity"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test failed",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "8357a1af4fa2159",
+        "status" : "failed",
+        "statusDetails" : "`cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: GET\nURL: https://gorest.co.in/public/v2/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request",
+        "time" : {
+          "start" : 1727792110190,
+          "stop" : 1727792140400,
+          "duration" : 30210
+        }
+      } ]
+    },
+    "tags" : [ "Sanity" ]
+  },
+  "source" : "e34f9d2a2f5b2247.json",
+  "parameterValues" : [ ]
+}
