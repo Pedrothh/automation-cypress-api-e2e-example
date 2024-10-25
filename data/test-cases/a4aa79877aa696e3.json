@@ -1,12 +1,12 @@
 {
-  "uid" : "fdf62675b5dc58b1",
+  "uid" : "a4aa79877aa696e3",
   "name" : "Get specific user",
   "fullName" : "Get specific user",
   "historyId" : "f41e8575b52aef63d4a34f25218307cb",
   "time" : {
-    "start" : 1729779306549,
-    "stop" : 1729779307245,
-    "duration" : 696
+    "start" : 1729865702254,
+    "stop" : 1729865702897,
+    "duration" : 643
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Given I get specific user by userId",
       "time" : {
-        "start" : 1729779306570,
-        "stop" : 1729779307233,
-        "duration" : 663
+        "start" : 1729865702272,
+        "stop" : 1729865702885,
+        "duration" : 613
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "GET 200 https://gorest.co.in/public/v2/users",
         "time" : {
-          "start" : 1729779306570,
-          "stop" : 1729779306891,
-          "duration" : 321
+          "start" : 1729865702273,
+          "stop" : 1729865702587,
+          "duration" : 314
         },
         "status" : "passed",
         "steps" : [ ],
@@ -38,11 +38,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "GET 200 https://gorest.co.in/public/v2/users/7488942",
+        "name" : "GET 200 https://gorest.co.in/public/v2/users/7483574",
         "time" : {
-          "start" : 1729779306892,
-          "stop" : 1729779307232,
-          "duration" : 340
+          "start" : 1729865702588,
+          "stop" : 1729865702882,
+          "duration" : 294
         },
         "status" : "passed",
         "steps" : [ ],
@@ -55,9 +55,9 @@
       }, {
         "name" : "as (\"getSpecificUser\")",
         "time" : {
-          "start" : 1729779307232,
-          "stop" : 1729779307232,
-          "duration" : 0
+          "start" : 1729865702882,
+          "stop" : 1729865702883,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -77,17 +77,17 @@
     }, {
       "name" : "Then validate status code 200 to get specific user",
       "time" : {
-        "start" : 1729779307233,
-        "stop" : 1729779307238,
+        "start" : 1729865702885,
+        "stop" : 1729865702890,
         "duration" : 5
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get @getSpecificUser",
         "time" : {
-          "start" : 1729779307234,
-          "stop" : 1729779307235,
-          "duration" : 1
+          "start" : 1729865702885,
+          "stop" : 1729865702887,
+          "duration" : 2
         },
         "status" : "passed",
         "steps" : [ ],
@@ -100,8 +100,8 @@
       }, {
         "name" : "assert expected **200** to equal **200**",
         "time" : {
-          "start" : 1729779307237,
-          "stop" : 1729779307237,
+          "start" : 1729865702889,
+          "stop" : 1729865702889,
           "duration" : 0
         },
         "status" : "passed",
@@ -128,16 +128,16 @@
     }, {
       "name" : "And validate the contract schema to get specific user",
       "time" : {
-        "start" : 1729779307238,
-        "stop" : 1729779307245,
+        "start" : 1729865702890,
+        "stop" : 1729865702897,
         "duration" : 7
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get @getSpecificUser",
         "time" : {
-          "start" : 1729779307238,
-          "stop" : 1729779307239,
+          "start" : 1729865702890,
+          "stop" : 1729865702891,
           "duration" : 1
         },
         "status" : "passed",
@@ -151,9 +151,9 @@
       }, {
         "name" : "fixture (\"getSpecificUsersContractSchema\")",
         "time" : {
-          "start" : 1729779307239,
-          "stop" : 1729779307242,
-          "duration" : 3
+          "start" : 1729865702891,
+          "stop" : 1729865702895,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -217,17 +217,17 @@
         "total" : 2
       },
       "items" : [ {
-        "uid" : "ffd24a527dd7185c",
+        "uid" : "5b3256c3662d86a4",
         "status" : "passed",
         "time" : {
-          "start" : 1729779306549,
-          "stop" : 1729779307245,
-          "duration" : 696
+          "start" : 1729865702254,
+          "stop" : 1729865702897,
+          "duration" : 643
         }
       } ]
     },
     "tags" : [ "Positive" ]
   },
-  "source" : "fdf62675b5dc58b1.json",
+  "source" : "a4aa79877aa696e3.json",
   "parameterValues" : [ ]
 }
