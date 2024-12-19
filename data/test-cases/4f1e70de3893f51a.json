@@ -1,0 +1,218 @@
+{
+  "uid" : "4f1e70de3893f51a",
+  "name" : "Get all users",
+  "fullName" : "Get all users",
+  "historyId" : "fe8c4b2e419b20c745584ac3356ef8e7",
+  "time" : {
+    "start" : 1734617709088,
+    "stop" : 1734617709477,
+    "duration" : 389
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I get all users",
+      "time" : {
+        "start" : 1734617709098,
+        "stop" : 1734617709429,
+        "duration" : 331
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET 200 https://gorest.co.in/public/v2/users",
+        "time" : {
+          "start" : 1734617709100,
+          "stop" : 1734617709425,
+          "duration" : 325
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"getAllUsers\")",
+        "time" : {
+          "start" : 1734617709425,
+          "stop" : 1734617709427,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then validate status code 200 to get all users",
+      "time" : {
+        "start" : 1734617709429,
+        "stop" : 1734617709436,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @getAllUsers",
+        "time" : {
+          "start" : 1734617709429,
+          "stop" : 1734617709431,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **200** to equal **200**",
+        "time" : {
+          "start" : 1734617709434,
+          "stop" : 1734617709434,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "200"
+        }, {
+          "name" : "expected",
+          "value" : "200"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And validate the contract schema to get all users",
+      "time" : {
+        "start" : 1734617709435,
+        "stop" : 1734617709477,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @getAllUsers",
+        "time" : {
+          "start" : 1734617709436,
+          "stop" : 1734617709437,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "fixture (\"getAllUsersContractSchema\")",
+        "time" : {
+          "start" : 1734617709437,
+          "stop" : 1734617709447,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress.e2e.apitest.feature"
+  }, {
+    "name" : "suite",
+    "value" : "APITest"
+  }, {
+    "name" : "feature",
+    "value" : "APITest"
+  }, {
+    "name" : "tag",
+    "value" : "Sanity"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test passed",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "62df0ea97ee9e7c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1734617709088,
+          "stop" : 1734617709477,
+          "duration" : 389
+        }
+      } ]
+    },
+    "tags" : [ "Sanity" ]
+  },
+  "source" : "4f1e70de3893f51a.json",
+  "parameterValues" : [ ]
+}
