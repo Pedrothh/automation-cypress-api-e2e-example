@@ -1,0 +1,233 @@
+{
+  "uid" : "d4d774482d510fb0",
+  "name" : "Get specific user",
+  "fullName" : "Get specific user",
+  "historyId" : "f41e8575b52aef63d4a34f25218307cb",
+  "time" : {
+    "start" : 1736691146852,
+    "stop" : 1736691147431,
+    "duration" : 579
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given I get specific user by userId",
+      "time" : {
+        "start" : 1736691146883,
+        "stop" : 1736691147417,
+        "duration" : 534
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET 200 https://gorest.co.in/public/v2/users",
+        "time" : {
+          "start" : 1736691146884,
+          "stop" : 1736691147158,
+          "duration" : 274
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET 200 https://gorest.co.in/public/v2/users/7625613",
+        "time" : {
+          "start" : 1736691147159,
+          "stop" : 1736691147415,
+          "duration" : 256
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"getSpecificUser\")",
+        "time" : {
+          "start" : 1736691147415,
+          "stop" : 1736691147416,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Then validate status code 200 to get specific user",
+      "time" : {
+        "start" : 1736691147417,
+        "stop" : 1736691147423,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @getSpecificUser",
+        "time" : {
+          "start" : 1736691147418,
+          "stop" : 1736691147421,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **200** to equal **200**",
+        "time" : {
+          "start" : 1736691147422,
+          "stop" : 1736691147422,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "200"
+        }, {
+          "name" : "expected",
+          "value" : "200"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "And validate the contract schema to get specific user",
+      "time" : {
+        "start" : 1736691147423,
+        "stop" : 1736691147431,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @getSpecificUser",
+        "time" : {
+          "start" : 1736691147424,
+          "stop" : 1736691147424,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "fixture (\"getSpecificUsersContractSchema\")",
+        "time" : {
+          "start" : 1736691147425,
+          "stop" : 1736691147429,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress.e2e.apitest.feature"
+  }, {
+    "name" : "suite",
+    "value" : "APITest"
+  }, {
+    "name" : "feature",
+    "value" : "APITest"
+  }, {
+    "name" : "tag",
+    "value" : "Positive"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test passed",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "61d5f9d00f541285",
+        "status" : "passed",
+        "time" : {
+          "start" : 1736691146852,
+          "stop" : 1736691147431,
+          "duration" : 579
+        }
+      } ]
+    },
+    "tags" : [ "Positive" ]
+  },
+  "source" : "d4d774482d510fb0.json",
+  "parameterValues" : [ ]
+}
