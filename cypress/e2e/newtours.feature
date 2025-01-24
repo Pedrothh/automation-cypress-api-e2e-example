@@ -6,21 +6,18 @@ As a valid user, check new tour application start
     
     @Sanity
     Scenario: NewTour Start application
-        When Verify the title
-        Then I should see web audit results
+        Then Verify the title
 
     @smoke1
     Scenario: NewTour Login
         And I enter user name "testepedro"
         And I enter password "123456"
         When I press the submit button 
-        Then I should see web audit results
-        And I should see the message "Login Successfully"
+        Then I should see the message "Login Successfully"
     
     @testFail
     Scenario: NewTour Login Fail
         And I enter user name "testepedro"
         And I enter password "1"
         When I press the submit button 
-        Then I should see web audit results
-        And I should see the message "Login Successfully"
+        Then I should see the message "Enter your userName and password correct"

@@ -58,6 +58,10 @@ And('I press the submit button', () => {
 }) 
 
 
-And('I should see the message {string}', (loginSuccessfullyMessage) => {
-    login.shouldSeeTheMessageLoginSuccessfully(loginSuccessfullyMessage)
-}) 
+And('I should see the message {string}', (loginMessage) => {
+    if (loginMessage == 'Login Successfully') {
+        login.shouldSeeTheMessage(loginMessage)
+    } else if (loginMessage == 'Enter your userName and password correct') {
+        login.shouldSeeTheMessage(loginMessage)
+    }
+})

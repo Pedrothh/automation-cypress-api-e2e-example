@@ -11,12 +11,12 @@
       {
         "id": "newtour-verification;newtour-start-application",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 8,
         "name": "NewTour Start application",
         "tags": [
           {
             "name": "@Sanity",
-            "line": 4
+            "line": 7
           }
         ],
         "type": "scenario",
@@ -24,31 +24,21 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "Start new tour application",
+            "line": 5,
+            "name": "I visit new tour application",
             "result": {
               "status": "passed",
-              "duration": 4360000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "Verify the title",
-            "result": {
-              "status": "passed",
-              "duration": 21000000
+              "duration": 4530000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "I should see web audit results",
+            "line": 9,
+            "name": "Verify the title",
             "result": {
               "status": "passed",
-              "duration": 2866000000
+              "duration": 19000000
             }
           }
         ]
@@ -56,12 +46,12 @@
       {
         "id": "newtour-verification;newtour-login",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 12,
         "name": "NewTour Login",
         "tags": [
           {
             "name": "@smoke1",
-            "line": 10
+            "line": 11
           }
         ],
         "type": "scenario",
@@ -69,31 +59,116 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 12,
-            "name": "Start new tour application",
+            "line": 5,
+            "name": "I visit new tour application",
             "result": {
               "status": "passed",
-              "duration": 1208000000
+              "duration": 1102000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter user name \"testepedro\"",
+            "result": {
+              "status": "passed",
+              "duration": 396000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I enter password \"123456\"",
+            "result": {
+              "status": "passed",
+              "duration": 339000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
-            "name": "Enter user name \"usertest\"",
+            "line": 15,
+            "name": "I press the submit button",
             "result": {
               "status": "passed",
-              "duration": 446000000
+              "duration": 1519000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "I should see web audit results",
+            "line": 16,
+            "name": "I should see the message \"Login Successfully\"",
             "result": {
               "status": "passed",
-              "duration": 2723000000
+              "duration": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "newtour-verification;newtour-login-fail",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "NewTour Login Fail",
+        "tags": [
+          {
+            "name": "@testFail",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I visit new tour application",
+            "result": {
+              "status": "passed",
+              "duration": 1493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I enter user name \"testepedro\"",
+            "result": {
+              "status": "passed",
+              "duration": 378000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I enter password \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 290000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I press the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 947000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see the message \"Enter your userName and password correct\"",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
             }
           }
         ]
