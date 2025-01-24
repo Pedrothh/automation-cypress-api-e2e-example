@@ -19,3 +19,7 @@
  //require('./commands')
  import "@cypress-audit/lighthouse/commands";
  import "@shelex/cypress-allure-plugin"
+
+afterEach(() => {
+ cy.screenshot(`scenario-${Cypress.currentTest.title}`);
+});
