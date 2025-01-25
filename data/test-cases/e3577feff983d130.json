@@ -1,12 +1,12 @@
 {
-  "uid" : "5fb7710274a2b674",
+  "uid" : "e3577feff983d130",
   "name" : "NewTour Start application",
   "fullName" : "NewTour Start application",
   "historyId" : "35eca6644f9cb0184e2376ef2f23f4c4",
   "time" : {
-    "start" : 1737742733821,
-    "stop" : 1737742736431,
-    "duration" : 2610
+    "start" : 1737814363023,
+    "stop" : 1737814365419,
+    "duration" : 2396
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Given I visit new tour application",
       "time" : {
-        "start" : 1737742733833,
-        "stop" : 1737742736419,
-        "duration" : 2586
+        "start" : 1737814363035,
+        "stop" : 1737814365409,
+        "duration" : 2374
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit /",
         "time" : {
-          "start" : 1737742733834,
-          "stop" : 1737742736415,
-          "duration" : 2581
+          "start" : 1737814363035,
+          "stop" : 1737814365406,
+          "duration" : 2371
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,8 +40,23 @@
       }, {
         "name" : "/ request",
         "time" : {
-          "start" : 1737742736414,
-          "stop" : 1737742736414,
+          "start" : 1737814365405,
+          "stop" : 1737814365405,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "/ request",
+        "time" : {
+          "start" : 1737814365405,
+          "stop" : 1737814365405,
           "duration" : 0
         },
         "status" : "passed",
@@ -55,24 +70,24 @@
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 2,
+      "stepsCount" : 3,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
       "name" : "Then Verify the title",
       "time" : {
-        "start" : 1737742736419,
-        "stop" : 1737742736430,
-        "duration" : 11
+        "start" : 1737814365409,
+        "stop" : 1737814365419,
+        "duration" : 10
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "title",
         "time" : {
-          "start" : 1737742736420,
-          "stop" : 1737742736429,
-          "duration" : 9
+          "start" : 1737814365409,
+          "stop" : 1737814365417,
+          "duration" : 8
         },
         "status" : "passed",
         "steps" : [ ],
@@ -85,8 +100,8 @@
       }, {
         "name" : "assert expected **Welcome: Mercury Tours** to equal **Welcome: Mercury Tours**",
         "time" : {
-          "start" : 1737742736429,
-          "stop" : 1737742736429,
+          "start" : 1737814365417,
+          "stop" : 1737814365417,
           "duration" : 0
         },
         "status" : "passed",
@@ -113,32 +128,17 @@
     }, {
       "name" : "\"after each\" hook",
       "time" : {
-        "start" : 1737742736446,
-        "stop" : 1737742737327,
-        "duration" : 881
+        "start" : 1737814365437,
+        "stop" : 1737814366150,
+        "duration" : 713
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "screenshot scenario-NewTour Start application",
         "time" : {
-          "start" : 1737742736447,
-          "stop" : 1737742737325,
-          "duration" : 878
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "scenario-NewTour Start application request",
-        "time" : {
-          "start" : 1737742737325,
-          "stop" : 1737742737325,
-          "duration" : 0
+          "start" : 1737814365438,
+          "stop" : 1737814366148,
+          "duration" : 710
         },
         "status" : "passed",
         "steps" : [ ],
@@ -151,17 +151,17 @@
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 2,
+      "stepsCount" : 1,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "7f762eb0ecd7f0af",
+      "uid" : "406786193adf7bfd",
       "name" : "scenario-NewTour Start application",
-      "source" : "7f762eb0ecd7f0af.png",
+      "source" : "406786193adf7bfd.png",
       "type" : "image/png",
-      "size" : 335437
+      "size" : 312658
     } ],
     "parameters" : [ ],
     "stepsCount" : 9,
@@ -208,17 +208,17 @@
         "total" : 2
       },
       "items" : [ {
-        "uid" : "7a0f0daa90146e20",
+        "uid" : "b65b5cd4cffb2079",
         "status" : "passed",
         "time" : {
-          "start" : 1737742733821,
-          "stop" : 1737742736431,
-          "duration" : 2610
+          "start" : 1737814363023,
+          "stop" : 1737814365419,
+          "duration" : 2396
         }
       } ]
     },
     "tags" : [ "Sanity" ]
   },
-  "source" : "5fb7710274a2b674.json",
+  "source" : "e3577feff983d130.json",
   "parameterValues" : [ ]
 }
