@@ -4,9 +4,9 @@ const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 module.exports = defineConfig({  
   env: {
-    CYPRESS_API_KEY: '${CYPRESS_API_KEY}'
+    CYPRESS_RECORD_KEY: process.env.CYPRESS_RECORD_KEY
   },
-  projectId: "pfj796", 
+  projectId: process.env.CYPRESS_PROJECT_ID,
   e2e: {
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber())
