@@ -1,12 +1,12 @@
 {
-  "uid" : "5347313ab73a6635",
-  "name" : "Get all users",
-  "fullName" : "Get all users",
-  "historyId" : "fe8c4b2e419b20c745584ac3356ef8e7",
+  "uid" : "afad32539765ed35",
+  "name" : "NewTour Start application",
+  "fullName" : "NewTour Start application",
+  "historyId" : "35eca6644f9cb0184e2376ef2f23f4c4",
   "time" : {
-    "start" : 1737853838655,
-    "stop" : 1737853839571,
-    "duration" : 916
+    "start" : 1737900755815,
+    "stop" : 1737900758936,
+    "duration" : 3121
   },
   "status" : "passed",
   "flaky" : false,
@@ -15,19 +15,19 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Given I get all users",
+      "name" : "Given I visit new tour application",
       "time" : {
-        "start" : 1737853838665,
-        "stop" : 1737853839518,
-        "duration" : 853
+        "start" : 1737900755827,
+        "stop" : 1737900758925,
+        "duration" : 3098
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "GET 200 https://gorest.co.in/public/v2/users",
+        "name" : "visit /",
         "time" : {
-          "start" : 1737853838667,
-          "stop" : 1737853839515,
-          "duration" : 848
+          "start" : 1737900755827,
+          "stop" : 1737900758922,
+          "duration" : 3095
         },
         "status" : "passed",
         "steps" : [ ],
@@ -38,11 +38,26 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "as (\"getAllUsers\")",
+        "name" : "/ request",
         "time" : {
-          "start" : 1737853839515,
-          "stop" : 1737853839516,
-          "duration" : 1
+          "start" : 1737900758922,
+          "stop" : 1737900758922,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "/ request",
+        "time" : {
+          "start" : 1737900758922,
+          "stop" : 1737900758922,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -55,24 +70,24 @@
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 2,
+      "stepsCount" : 3,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "Then validate status code 200 to get all users",
+      "name" : "Then Verify the title",
       "time" : {
-        "start" : 1737853839518,
-        "stop" : 1737853839525,
-        "duration" : 7
+        "start" : 1737900758925,
+        "stop" : 1737900758935,
+        "duration" : 10
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "get @getAllUsers",
+        "name" : "title",
         "time" : {
-          "start" : 1737853839519,
-          "stop" : 1737853839520,
-          "duration" : 1
+          "start" : 1737900758926,
+          "stop" : 1737900758934,
+          "duration" : 8
         },
         "status" : "passed",
         "steps" : [ ],
@@ -83,10 +98,10 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "assert expected **200** to equal **200**",
+        "name" : "assert expected **Welcome: Mercury Tours** to equal **Welcome: Mercury Tours**",
         "time" : {
-          "start" : 1737853839524,
-          "stop" : 1737853839524,
+          "start" : 1737900758933,
+          "stop" : 1737900758933,
           "duration" : 0
         },
         "status" : "passed",
@@ -94,10 +109,10 @@
         "attachments" : [ ],
         "parameters" : [ {
           "name" : "actual",
-          "value" : "200"
+          "value" : "Welcome: Mercury Tours"
         }, {
           "name" : "expected",
-          "value" : "200"
+          "value" : "Welcome: Mercury Tours"
         } ],
         "stepsCount" : 0,
         "attachmentsCount" : 0,
@@ -111,64 +126,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "And validate the contract schema to get all users",
-      "time" : {
-        "start" : 1737853839525,
-        "stop" : 1737853839570,
-        "duration" : 45
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "get @getAllUsers",
-        "time" : {
-          "start" : 1737853839526,
-          "stop" : 1737853839526,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "fixture (\"getAllUsersContractSchema\")",
-        "time" : {
-          "start" : 1737853839527,
-          "stop" : 1737853839535,
-          "duration" : 8
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 2,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : true
-    }, {
       "name" : "\"after each\" hook",
       "time" : {
-        "start" : 1737853839574,
-        "stop" : 1737853839956,
-        "duration" : 382
+        "start" : 1737900758959,
+        "stop" : 1737900759669,
+        "duration" : 710
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "screenshot scenario-Get all users",
+        "name" : "screenshot scenario-NewTour Start application",
         "time" : {
-          "start" : 1737853839575,
-          "stop" : 1737853839955,
-          "duration" : 380
+          "start" : 1737900758960,
+          "stop" : 1737900759667,
+          "duration" : 707
         },
         "status" : "passed",
         "steps" : [ ],
@@ -187,14 +157,14 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "d7aa903e118c8262",
-      "name" : "scenario-Get all users",
-      "source" : "d7aa903e118c8262.png",
+      "uid" : "27d0690c12995937",
+      "name" : "scenario-NewTour Start application",
+      "source" : "27d0690c12995937.png",
       "type" : "image/png",
-      "size" : 27931
+      "size" : 335437
     } ],
     "parameters" : [ ],
-    "stepsCount" : 11,
+    "stepsCount" : 9,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -202,13 +172,13 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "package",
-    "value" : "cypress.e2e.apitest.feature"
+    "value" : "cypress.e2e.newtours.feature"
   }, {
     "name" : "suite",
-    "value" : "APITest"
+    "value" : "NewTour Verification"
   }, {
     "name" : "feature",
-    "value" : "APITest"
+    "value" : "NewTour Verification"
   }, {
     "name" : "tag",
     "value" : "Sanity"
@@ -238,17 +208,17 @@
         "total" : 2
       },
       "items" : [ {
-        "uid" : "59f18d0601a1cca6",
+        "uid" : "d9c8004fc900d4a4",
         "status" : "passed",
         "time" : {
-          "start" : 1737853838655,
-          "stop" : 1737853839571,
-          "duration" : 916
+          "start" : 1737900755815,
+          "stop" : 1737900758936,
+          "duration" : 3121
         }
       } ]
     },
     "tags" : [ "Sanity" ]
   },
-  "source" : "5347313ab73a6635.json",
+  "source" : "afad32539765ed35.json",
   "parameterValues" : [ ]
 }
