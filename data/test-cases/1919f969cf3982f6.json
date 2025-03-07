@@ -1,12 +1,12 @@
 {
-  "uid" : "f64711f5f5a1d23f",
-  "name" : "NewTour Login Successfully",
-  "fullName" : "NewTour Login Successfully",
-  "historyId" : "ffb86babd73c54261f7e730751969a69",
+  "uid" : "1919f969cf3982f6",
+  "name" : "NewTour Login With Wrong Password",
+  "fullName" : "NewTour Login With Wrong Password",
+  "historyId" : "d2e42b4d5a8d129950b92421f61852f3",
   "time" : {
-    "start" : 1741097522711,
-    "stop" : 1741097527088,
-    "duration" : 4377
+    "start" : 1741356707917,
+    "stop" : 1741356710145,
+    "duration" : 2228
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "Given I visit new tour application",
       "time" : {
-        "start" : 1741097522812,
-        "stop" : 1741097524485,
-        "duration" : 1673
+        "start" : 1741356708012,
+        "stop" : 1741356708622,
+        "duration" : 610
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit /",
         "time" : {
-          "start" : 1741097522813,
-          "stop" : 1741097524482,
-          "duration" : 1669
+          "start" : 1741356708012,
+          "stop" : 1741356708620,
+          "duration" : 608
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,8 +40,8 @@
       }, {
         "name" : "/ request",
         "time" : {
-          "start" : 1741097524482,
-          "stop" : 1741097524482,
+          "start" : 1741356708620,
+          "stop" : 1741356708620,
           "duration" : 0
         },
         "status" : "passed",
@@ -62,17 +62,17 @@
     }, {
       "name" : "And I enter user name \"testepedro\"",
       "time" : {
-        "start" : 1741097524485,
-        "stop" : 1741097524921,
-        "duration" : 436
+        "start" : 1741356708622,
+        "stop" : 1741356709009,
+        "duration" : 387
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get input[name=\"userName\"]",
         "time" : {
-          "start" : 1741097524486,
-          "stop" : 1741097524503,
-          "duration" : 17
+          "start" : 1741356708623,
+          "stop" : 1741356708627,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -85,9 +85,24 @@
       }, {
         "name" : "click",
         "time" : {
-          "start" : 1741097524503,
-          "stop" : 1741097524618,
-          "duration" : 115
+          "start" : 1741356708628,
+          "stop" : 1741356708725,
+          "duration" : 97
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "request",
+        "time" : {
+          "start" : 1741356708725,
+          "stop" : 1741356708725,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -100,9 +115,9 @@
       }, {
         "name" : "get input[name=\"userName\"]",
         "time" : {
-          "start" : 1741097524618,
-          "stop" : 1741097524627,
-          "duration" : 9
+          "start" : 1741356708725,
+          "stop" : 1741356708731,
+          "duration" : 6
         },
         "status" : "passed",
         "steps" : [ ],
@@ -115,9 +130,9 @@
       }, {
         "name" : "clear",
         "time" : {
-          "start" : 1741097524627,
-          "stop" : 1741097524723,
-          "duration" : 96
+          "start" : 1741356708731,
+          "stop" : 1741356708817,
+          "duration" : 86
         },
         "status" : "passed",
         "steps" : [ ],
@@ -130,9 +145,9 @@
       }, {
         "name" : "get input[name=\"userName\"]",
         "time" : {
-          "start" : 1741097524723,
-          "stop" : 1741097524732,
-          "duration" : 9
+          "start" : 1741356708817,
+          "stop" : 1741356708822,
+          "duration" : 5
         },
         "status" : "passed",
         "steps" : [ ],
@@ -145,9 +160,9 @@
       }, {
         "name" : "type testepedro",
         "time" : {
-          "start" : 1741097524732,
-          "stop" : 1741097524918,
-          "duration" : 186
+          "start" : 1741356708822,
+          "stop" : 1741356709007,
+          "duration" : 185
         },
         "status" : "passed",
         "steps" : [ ],
@@ -160,24 +175,24 @@
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 6,
+      "stepsCount" : 7,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "And I enter password \"123456\"",
+      "name" : "And I enter password \"1\"",
       "time" : {
-        "start" : 1741097524921,
-        "stop" : 1741097525276,
-        "duration" : 355
+        "start" : 1741356709009,
+        "stop" : 1741356709278,
+        "duration" : 269
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get input[name=\"password\"]",
         "time" : {
-          "start" : 1741097524922,
-          "stop" : 1741097524930,
-          "duration" : 8
+          "start" : 1741356709010,
+          "stop" : 1741356709014,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -190,9 +205,9 @@
       }, {
         "name" : "click",
         "time" : {
-          "start" : 1741097524930,
-          "stop" : 1741097525028,
-          "duration" : 98
+          "start" : 1741356709014,
+          "stop" : 1741356709109,
+          "duration" : 95
         },
         "status" : "passed",
         "steps" : [ ],
@@ -205,9 +220,9 @@
       }, {
         "name" : "get input[name=\"password\"]",
         "time" : {
-          "start" : 1741097525028,
-          "stop" : 1741097525036,
-          "duration" : 8
+          "start" : 1741356709109,
+          "stop" : 1741356709113,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -220,9 +235,9 @@
       }, {
         "name" : "clear",
         "time" : {
-          "start" : 1741097525036,
-          "stop" : 1741097525125,
-          "duration" : 89
+          "start" : 1741356709113,
+          "stop" : 1741356709198,
+          "duration" : 85
         },
         "status" : "passed",
         "steps" : [ ],
@@ -235,9 +250,9 @@
       }, {
         "name" : "get input[name=\"password\"]",
         "time" : {
-          "start" : 1741097525125,
-          "stop" : 1741097525133,
-          "duration" : 8
+          "start" : 1741356709198,
+          "stop" : 1741356709202,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -248,11 +263,11 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "type 123456",
+        "name" : "type 1",
         "time" : {
-          "start" : 1741097525133,
-          "stop" : 1741097525274,
-          "duration" : 141
+          "start" : 1741356709202,
+          "stop" : 1741356709277,
+          "duration" : 75
         },
         "status" : "passed",
         "steps" : [ ],
@@ -272,17 +287,17 @@
     }, {
       "name" : "When I press the submit button",
       "time" : {
-        "start" : 1741097525276,
-        "stop" : 1741097527063,
-        "duration" : 1787
+        "start" : 1741356709278,
+        "stop" : 1741356710133,
+        "duration" : 855
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "get input[name=\"submit\"]",
         "time" : {
-          "start" : 1741097525277,
-          "stop" : 1741097525287,
-          "duration" : 10
+          "start" : 1741356709278,
+          "stop" : 1741356709282,
+          "duration" : 4
         },
         "status" : "passed",
         "steps" : [ ],
@@ -295,9 +310,9 @@
       }, {
         "name" : "click",
         "time" : {
-          "start" : 1741097525287,
-          "stop" : 1741097525391,
-          "duration" : 104
+          "start" : 1741356709282,
+          "stop" : 1741356709378,
+          "duration" : 96
         },
         "status" : "passed",
         "steps" : [ ],
@@ -310,8 +325,8 @@
       }, {
         "name" : "form sub --submitting form--",
         "time" : {
-          "start" : 1741097525390,
-          "stop" : 1741097525390,
+          "start" : 1741356709378,
+          "stop" : 1741356709378,
           "duration" : 0
         },
         "status" : "passed",
@@ -325,8 +340,8 @@
       }, {
         "name" : "page load --waiting for new page to load--",
         "time" : {
-          "start" : 1741097525390,
-          "stop" : 1741097525390,
+          "start" : 1741356709378,
+          "stop" : 1741356709378,
           "duration" : 0
         },
         "status" : "passed",
@@ -340,8 +355,8 @@
       }, {
         "name" : "function(){} request",
         "time" : {
-          "start" : 1741097527060,
-          "stop" : 1741097527060,
+          "start" : 1741356710132,
+          "stop" : 1741356710132,
           "duration" : 0
         },
         "status" : "passed",
@@ -355,8 +370,8 @@
       }, {
         "name" : "function(){} request",
         "time" : {
-          "start" : 1741097527060,
-          "stop" : 1741097527060,
+          "start" : 1741356710132,
+          "stop" : 1741356710132,
           "duration" : 0
         },
         "status" : "passed",
@@ -370,8 +385,8 @@
       }, {
         "name" : "function(){} request",
         "time" : {
-          "start" : 1741097527060,
-          "stop" : 1741097527060,
+          "start" : 1741356710132,
+          "stop" : 1741356710132,
           "duration" : 0
         },
         "status" : "passed",
@@ -383,25 +398,10 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "new url https://demo.guru99.com/test/newtours/login_sucess.php",
+        "name" : "new url https://demo.guru99.com/test/newtours/index.php",
         "time" : {
-          "start" : 1741097527060,
-          "stop" : 1741097527060,
-          "duration" : 0
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      }, {
-        "name" : "function(){} request",
-        "time" : {
-          "start" : 1741097527061,
-          "stop" : 1741097527061,
+          "start" : 1741356710132,
+          "stop" : 1741356710132,
           "duration" : 0
         },
         "status" : "passed",
@@ -415,24 +415,24 @@
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 9,
+      "stepsCount" : 8,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "Then I should see the message \"Login Successfully\"",
+      "name" : "Then I should see the message \"Enter your userName and password correct\"",
       "time" : {
-        "start" : 1741097527063,
-        "stop" : 1741097527088,
-        "duration" : 25
+        "start" : 1741356710133,
+        "stop" : 1741356710145,
+        "duration" : 12
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "get body > div:nth-child(6) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h3:nth-child(1)",
+        "name" : "get body > div:nth-child(6) > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(3) > form > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(3) > td:nth-child(2) > span",
         "time" : {
-          "start" : 1741097527064,
-          "stop" : 1741097527087,
-          "duration" : 23
+          "start" : 1741356710134,
+          "stop" : 1741356710144,
+          "duration" : 10
         },
         "status" : "passed",
         "steps" : [ ],
@@ -443,10 +443,10 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "assert expected **<h3>** to contain **Login Successfully**",
+        "name" : "assert expected **<span>** to contain **Enter your userName and password correct**",
         "time" : {
-          "start" : 1741097527087,
-          "stop" : 1741097527087,
+          "start" : 1741356710144,
+          "stop" : 1741356710144,
           "duration" : 0
         },
         "status" : "passed",
@@ -467,17 +467,17 @@
     }, {
       "name" : "\"after each\" hook",
       "time" : {
-        "start" : 1741097527104,
-        "stop" : 1741097527948,
-        "duration" : 844
+        "start" : 1741356710156,
+        "stop" : 1741356711047,
+        "duration" : 891
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "screenshot scenario-NewTour Login Successfully",
+        "name" : "screenshot scenario-NewTour Login With Wrong Password",
         "time" : {
-          "start" : 1741097527105,
-          "stop" : 1741097527947,
-          "duration" : 842
+          "start" : 1741356710156,
+          "stop" : 1741356711046,
+          "duration" : 890
         },
         "status" : "passed",
         "steps" : [ ],
@@ -496,11 +496,11 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "1bd13dcd8efd4d7",
-      "name" : "scenario-NewTour Login Successfully",
-      "source" : "1bd13dcd8efd4d7.png",
+      "uid" : "eba6b67ce6955798",
+      "name" : "scenario-NewTour Login With Wrong Password",
+      "source" : "eba6b67ce6955798.png",
       "type" : "image/png",
-      "size" : 255443
+      "size" : 319797
     } ],
     "parameters" : [ ],
     "stepsCount" : 32,
@@ -520,7 +520,7 @@
     "value" : "NewTour Verification"
   }, {
     "name" : "tag",
-    "value" : "smoke1"
+    "value" : "testFail"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -547,17 +547,17 @@
         "total" : 2
       },
       "items" : [ {
-        "uid" : "c1dd1cef989bf487",
+        "uid" : "73d6b57012827743",
         "status" : "passed",
         "time" : {
-          "start" : 1741097522711,
-          "stop" : 1741097527088,
-          "duration" : 4377
+          "start" : 1741356707917,
+          "stop" : 1741356710145,
+          "duration" : 2228
         }
       } ]
     },
-    "tags" : [ "smoke1" ]
+    "tags" : [ "testFail" ]
   },
-  "source" : "f64711f5f5a1d23f.json",
+  "source" : "1919f969cf3982f6.json",
   "parameterValues" : [ ]
 }
